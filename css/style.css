@@ -35,6 +35,7 @@
  * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
+/* .clearfix {{{ */
 .clearfix:after {
     content: ".";
     display: block;
@@ -101,7 +102,7 @@ body.white {
 }
 
 body.pinstripe {
-    background: #c7ced5 url(../images/pinstripes.png);
+    background: #c7ced5 url(/web/20110701060433im_/http://cache.saurik.com/menes/pinstripes.png);
 }
 
 dialog {
@@ -141,7 +142,7 @@ em {
 
 /* #toolbar {{{ */
 dialog > toolbar {
-    background: url(../images/toolbar.png) #6d84a2 repeat-x;
+    background: url(/web/20110701060433im_/http://cache.saurik.com/menes/toolbar.png) #6d84a2 repeat-x;
     border-bottom: 1px solid #2d3642;
     height: 45px;
     padding: 10px;
@@ -174,13 +175,13 @@ dialog > toolbar > a.forward-button {
 }
 
 dialog > toolbar > a.back-button {
-    -webkit-border-image: url(../images/backButton.png) 0 8 0 14;
+    -webkit-border-image: url(/web/20110701060433im_/http://cache.saurik.com/menes/backButton.png) 0 8 0 14;
     border-width: 0 8px 0 14px;
     float: left;
 }
 
 dialog > toolbar > a.forward-button {
-    -webkit-border-image: url(../images/toolButton.png) 0 5 0 5;
+    -webkit-border-image: url(/web/20110701060433im_/http://cache.saurik.com/menes/toolButton.png) 0 5 0 5;
     border-width: 0 5px;
     float: right;
 }
@@ -191,14 +192,14 @@ panel > block {
     /*background-color: white;*/
     /*background-color: #c7ced5;*/
     background-color: transparent;
-    background-color: #ffffff;
+    //background-color: #ffffff;
     border-bottom: 1px solid #999999;
     border-top: 1px solid #999999;
     border-left: 1px dotted #999999;
     border-right: 1px dotted #999999;
     -moz-border-radius: 9px;
     -webkit-border-radius: 9px;
-    border: 1px solid #999999;
+    //border: 1px solid #999999;
     display: block;
     font-size: 16px;
     margin: 9px;
@@ -220,7 +221,7 @@ panel > fieldset {
 }
 
 panel > input[type="submit"] {
-    /*-webkit-border-image: url(/web/20111121003049im_/http://cydia.saurik.com/menes/whiteButton.png) 0 12 0 12;
+    /*-webkit-border-image: url(/web/20110701060433im_/http://cache.saurik.com/menes/whiteButton.png) 0 12 0 12;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-width: 0px 12px;*/
@@ -237,9 +238,8 @@ panel > input[type="submit"] {
 }
 
 list > label {
-    background: #a7b3bc url(cydia://uikit-image/UISectionListHeaderBackground.html);
+    background: #a7b3bc url(https://web.archive.org/web/20110701060433im_/cydia://uikit-image/UISectionListHeaderBackground.png);
     background-repeat: repeat-x no-repeat-y;
-    background-size: 1px 23px;
     margin-bottom: 0px;
     padding: 4px 15px 1px 15px;
     display: block;
@@ -267,7 +267,6 @@ panel > fieldset > textarea {
 
 /* XXX: should be a.left:nth-last-child(2) */
 panel > fieldset > a.left,
-panel > fieldset > a.middle,
 panel > fieldset > a:last-child,
 panel > fieldset > div:last-child,
 panel > fieldset > textarea:last-child {
@@ -339,12 +338,12 @@ div[tile] {
     width: 30px;
 }
 
-div[tile="app"]   { background-image: url(../../../../20111017232545im_/http_/cache.saurik.com/cydia/tile/app.html);   }
-div[tile="call"]  { background-image: url(../../../../20111017230208im_/http_/cache.saurik.com/cydia/tile/call.html);  }
-div[tile="map"]   { background-image: url(../../../../20111017231527im_/http_/cache.saurik.com/cydia/tile/map.html);   }
-div[tile="media"] { background-image: url(../../../../20111017232648im_/http_/cache.saurik.com/cydia/tile/media.html); }
-div[tile="music"] { background-image: url(../../../../20111017231730im_/http_/cache.saurik.com/cydia/tile/video.html); }
-div[tile="site"]  { background-image: url(../../../../20111017231934im_/http_/cache.saurik.com/cydia/tile/site.html);  }
+div[tile="app"]   { background-image: url(https://web.archive.org/web/20110701060433im_/http://cache.saurik.com/cydia/tile/app.png);   }
+div[tile="call"]  { background-image: url(https://web.archive.org/web/20110701060433im_/http://cache.saurik.com/cydia/tile/call.png);  }
+div[tile="map"]   { background-image: url(https://web.archive.org/web/20110701060433im_/http://cache.saurik.com/cydia/tile/map.png);   }
+div[tile="media"] { background-image: url(https://web.archive.org/web/20110701060433im_/http://cache.saurik.com/cydia/tile/media.png); }
+div[tile="music"] { background-image: url(https://web.archive.org/web/20110701060433im_/http://cache.saurik.com/cydia/tile/video.png); }
+div[tile="site"]  { background-image: url(https://web.archive.org/web/20110701060433im_/http://cache.saurik.com/cydia/tile/site.png);  }
 
 fieldset > a[type="ad"] > div:first-child {
     background-repeat: no-repeat;
@@ -407,11 +406,6 @@ fieldset > div > img.icon {
     width: 30px;
 }
 
-fieldset > a.sixth > img.icon {
-    position: relative;
-    left: 7px;
-}
-
 panel > block > p,
 fieldset > div > p,
 panel > block > ul,
@@ -421,7 +415,7 @@ fieldset > div > ul {
 
 panel > block > ul,
 fieldset > div > ul {
-    margin-left: 18px;
+    margin-left: 13px;
 }
 
 panel > block > p,
@@ -459,30 +453,7 @@ fieldset > a[href]:not([type="ad"]),
 fieldset > div > select,
 fieldset > div > div > select {
     background-repeat: no-repeat;
-    background-image: url(../images/chevron.png);
-}
-
-fieldset.dark > a[href]:not([type="ad"]),
-fieldset.dark > div > select,
-fieldset.dark > div > div > select {
-    background-image: url(../images/whiteChevron.png);
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 2) {
-
-fieldset > a[href]:not([type="ad"]),
-fieldset > div > select,
-fieldset > div > div > select {
-    background-image: url(../images/chevron%402x.png);
-    background-size: 10px 13px;
-}
-
-fieldset.dark > a[href]:not([type="ad"]),
-fieldset.dark > div > select,
-fieldset.dark > div > div > select {
-    background-image: url(../images/whiteChevron%402x.png);
-}
-
+    background-image: url(/web/20110701060433im_/http://cache.saurik.com/menes/chevron.png);
 }
 
 /* Horizontal */
@@ -497,14 +468,6 @@ panel > fieldset > a[href] {
 
 panel > fieldset > a[href].half {
     background-position: 125px center;
-}
-
-panel > fieldset > a[href].third {
-    background-position: 75px center;
-}
-
-panel > fieldset > a[href].sixth {
-    background: none;
 }
 
 list > fieldset > a:not([href]) > select,
@@ -604,10 +567,6 @@ fieldset > a[href] > img.icon + div {
     width: 221px;
 }
 
-fieldset > a.half > img.icon + div {
-    width: 79px;
-}
-
 fieldset > a[type="profile"] > div:nth-child(2) > label:nth-child(1).unknown {
     color: #aaaabb;
 }
@@ -700,7 +659,6 @@ fieldset > a[type="ad"] > div > label + label {
     font-weight: normal;
 }
 
-panel > fieldset > a.middle,
 panel > fieldset > a.right {
     border-left: 1px solid #999999;
 }
@@ -710,25 +668,16 @@ panel > fieldset > a.half {
     width: 150px;
 }
 
-panel > fieldset > a.third {
-    display: inline-block;
-    width: 100px;
-}
-
-panel > fieldset > a.sixth {
-    display: inline-block;
-    width: 50px;
-}
-
-panel > fieldset.half > a {
+fieldset.half > a {
+    background: none;
     background-position: 120px center;
 }
 
-panel > fieldset.half > a > img.icon + div {
-    width: 88px;
+fieldset.half > a > img.icon + div {
+    width: 65px;
 }
 
-panel > fieldset.right {
+fieldset.right {
     float: right;
     margin-left: 10px;
 }
@@ -738,25 +687,8 @@ fieldset + fieldset.right {
     margin-top: 0;
 }
 
-panel > fieldset.half {
+fieldset.half {
     width: 146px;
-}
-
-list > fieldset.half > a {
-    background-position: 135px center;
-}
-
-list > fieldset.half > a > img.icon + div {
-    width: 88px;
-}
-
-list > fieldset.right {
-    float: right;
-    border-left: 1px solid #e0e0e0;
-}
-
-list > fieldset.half {
-    width: 160px;
 }
 
 panel > fieldset.dashed > a,
@@ -827,14 +759,6 @@ fieldset > a.small.half > img.icon + div {
     width: 79px;
 }
 
-fieldset > a.small.third > img.icon + div {
-    width: 50px;
-}
-
-fieldset > a.small.sixth > img.icon + div {
-    width: 0px;
-}
-
 panel.centered > label {
     margin-left: 0px;
     margin-right: 0px;
@@ -879,7 +803,7 @@ panel > iframe + iframe {
 .rating .back,
 .rating .fore,
 .rating .star {
-    background: url(../images/knewstuff.png);
+    background: url(https://web.archive.org/web/20110701060433im_/http://cache.saurik.com/crystal/16x16/actions/knewstuff.png);
     height: 16px;
 }
 
@@ -913,3 +837,24 @@ panel > fieldset.header > a > div > label {
     color: #4d4d70;
     text-shadow: rgba(255, 255, 255, 0.75) 1px 1px 0;
 }
+
+/*
+     FILE ARCHIVED ON 06:04:33 Jul 01, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:14:22 Apr 14, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.855
+  exclusion.robots: 0.059
+  exclusion.robots.policy: 0.042
+  esindex: 0.015
+  cdx.remote: 9.543
+  LoadShardBlock: 105.501 (3)
+  PetaboxLoader3.datanode: 88.739 (4)
+  load_resource: 107.47
+  PetaboxLoader3.resolve: 94.662
+*/
