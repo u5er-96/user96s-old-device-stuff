@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script type="text/javascript" src="bundle-playback.js" charset="utf-8"></script>
+<script type="text/javascript" src="wombat.js" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cmsresources.windowsphone.com/content/video.html?id=Live-Tiles&amp;wi=148&amp;he=244&amp;mu=http:%2f%2fcmsresources.windowsphone.com%2fwindowsphone%2fen-US%2fhome%2fVideos%2fNokia-Lumia-1020%2fLive-Tiles%2fWindows-Phone-Live-Tiles-desktop.mp4&amp;ou=http:%2f%2fcmsresources.windowsphone.com%2fwindowsphone%2fen-US%2fhome%2fVideos%2fNokia-Lumia-1020%2fLive-Tiles%2fWindows-Phone-Live-Tiles-desktop.ogv&amp;tu=http:%2f%2fcmsresources.windowsphone.com%2fwindowsphone%2fen-US%2fhome%2fVideos%2fNokia-Lumia-1020%2fLive-Tiles%2fWindows-Phone-Live-Tiles-desktop.xml&amp;iu=http:%2f%2fcmsresources.windowsphone.com%2fwindowsphone%2fen-US%2fhome%2fVideos%2fNokia-Lumia-1020%2fLive-Tiles%2fWindows-Phone-Live-Tiles-desktop.png&amp;at=Windows+Phone+Live+Tiles&amp;lr=1&amp;as=1&amp;hc=1&amp;lp=1&amp;to=http:%2f%2fwww.windowsphone.com%2f","20200522155107","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1590162667");
+</script>
+<link rel="stylesheet" type="text/css" href="banner-styles.css">
+<link rel="stylesheet" type="text/css" href="iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+
+    <title>Video</title>
+    <script src="video_data/jquery-1.4.4.min.js" type="text/javascript"></script>
+    <script src="video_data/playerframework.min.js" type="text/javascript"></script>
+    <script src="video_data/wpsvideoplayer.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="video_data/wps-playerframework.min.css">
+</head>
+<body class="videoFrame">
+<script type="text/javascript">
+
+    var domains = { "validDomains" : [ "windowsphone.com", "windowsphone-int.com", "windowsphonenext.com", "windowsphonenext-int.com", "microsoft.com" ]};
+    var search = location.search.replace("?", "").split("&");
+    var query = {};
+    for (var i = 0; i < search.length; i++) {
+        var t = search[i].split("=");
+        var decodedVar = decodeURIComponent(t[1])
+        if (!tagElementsExists(decodedVar)) {
+            query[t[0]] = decodedVar;
+        }
+    }
+
+    // Help function to identify strings with '<' '>' characters. It's useful to prevent XSS.
+    function tagElementsExists(strTemp) {
+        return /\<|\>/g.test(strTemp);
+    }
+
+    // converts only quotation marks ("), apostrophe ('), ampersands (&), and left angle brackets (<) to equivalent character entities
+    function HtmlAttributeEncode(att) {
+        return att ? att.replace("\"", "&quot;").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("'", "&apos;") : att;
+    }
+    
+    function getUrlHostName(url) {
+        var urlMatch = url.match(/:\/\/(www[0-9]?\.)?(.[^/:]+)/i);
+        if (urlMatch != null && urlMatch.length > 2 && urlMatch[2].length > 0) {
+            return urlMatch[2];
+        }
+        else {
+            return null;
+        }
+    }
+    
+    function getUrlDomain(url) {
+        var urlHostName = getUrlHostName(url);
+        var urlDomain = urlHostName;
+        if (urlHostName != null) {
+            var tokens = urlHostName.split('.').reverse();
+            if (tokens != null && tokens.length > 1) {
+                urlDomain = tokens[1] + '.' + tokens[0];
+            }
+        }
+        return urlDomain;
+    }
+    
+    function isValidUrl(url)
+    {
+        var isValid = false;
+        if (url != null && typeof url === 'string' ) {
+            var urlDomain = getUrlDomain(url.toLowerCase());
+            for (var domain in domains.validDomains) {
+                if (domains.validDomains[domain] == urlDomain) {
+                    isValid = true;
+                    break;
+                }
+            }
+        }
+        return isValid;
+    }
+
+</script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        var videoHtml = "<video {id}";
+        var videoWidth = HtmlAttributeEncode(query["wi"]);
+        if (videoWidth) {
+            videoHtml += " width=\"" + videoWidth + "\"";
+        }
+
+        var videoHeight = HtmlAttributeEncode(query["he"]);
+        if (videoHeight) {
+            videoHtml += " height=\"" + videoHeight + "\"";
+        }
+
+        var imageUrl = HtmlAttributeEncode(query["iu"]);
+        if (imageUrl && isValidUrl(imageUrl)) {
+            videoHtml += " poster=\"" + imageUrl + "\"";
+        }
+
+        var loop = query["lp"];
+        if (loop && loop == "1") {
+            videoHtml += "loop='true'";
+        }
+        
+        var controls = " controls";
+        if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
+            controls = "";
+        }
+
+        videoHtml += controls + " preload='metadata'>";
+
+        var oggUrl = HtmlAttributeEncode(query["ou"]);
+        if (oggUrl && isValidUrl(oggUrl)) {
+            videoHtml += "<source type='video/ogg; codecs=\"theora, vorbis\"' src=\"" + oggUrl + "\" />";
+        }
+
+        var webmUrl = HtmlAttributeEncode(query["wm"]);
+        if (webmUrl && isValidUrl(webmUrl)) {
+            videoHtml += "<source type='video/webm' src=\"" + webmUrl + "\" />";
+        }
+
+        var mp4Url = HtmlAttributeEncode(query["mu"]);
+        if (mp4Url && isValidUrl(mp4Url)) {
+            videoHtml += "<source type='video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"' src=\"" + mp4Url + "\" />";
+        }
+
+        var captionUrl = HtmlAttributeEncode(query["tu"]);
+        if (captionUrl && isValidUrl(captionUrl)) {
+            videoHtml += "<track src=\"" + captionUrl + "\" kind='captions' />";
+        }
+
+        if (imageUrl && isValidUrl(imageUrl)) {
+            videoHtml += "<img src=\"" + imageUrl + "\"";
+            var imageAlt = HtmlAttributeEncode(query["at"]);
+            if (imageAlt) {
+                videoHtml += "alt=\"" + imageAlt + "\"";
+            }
+
+            if (videoWidth) {
+                videoHtml += " width=\"" + videoWidth + "\"";
+            }
+
+            if (videoHeight) {
+                videoHtml += " height=\"" + videoHeight + "\"";
+            }
+
+            videoHtml += "/>";
+        }
+
+        videoHtml += "</video>";
+        var idAttribute = query["id"] != null ? "id=\"" + HtmlAttributeEncode(query["id"]) + "\"" : "";
+        videoHtml = videoHtml.replace("{id}", idAttribute);
+
+        if (videoWidth) {
+            $("#videoContainer").css("left", Math.floor(($(window).width() - videoWidth) / 2) + "px");
+            $("#videoDiv").css("width", videoWidth + "px");
+        }
+
+        if (videoHeight) {
+            $("#videoContainer").css("top", Math.floor(($(window).height() - videoHeight) / 2) + "px");
+            $("#videoDiv").css("height", videoHeight + "px");
+        }
+
+        var renderCloseButton = query["rc"] == "1" ? true : false;
+        if (renderCloseButton) {
+            var textDirectionLeftToRight = query["lr"] == "1" || query["lr"] == null ? true : false;
+            $("#videoCloseButton").css("display", "block");
+            var closeButtonPosition = textDirectionLeftToRight ? videoWidth + "px" : "-" + $("#videoCloseButton").css("width");
+            $("#videoCloseButton").css("left", closeButtonPosition);
+        }
+
+
+
+        $("#videoDiv").html(videoHtml);
+
+        var autoStart = query["as"] == "1" ? true : false;
+        var hideControlsParam = query["hc"] == "1" ? true : false;
+        var pauseEndParam = query["pe"] == "1" ? true : false;
+        var postMessageTargetOrigin = query["to"];
+
+        var videoPlayer = $("video").wpsVideoPlayer({ autoplay: autoStart, targetOrigin: postMessageTargetOrigin, hideControls: hideControlsParam, pauseEnd: pauseEndParam });
+
+        $("#videoCloseButton").click(function () {
+            videoPlayer.pause();
+            parent.postMessage("video.close." + $(".pf-video").attr("id"), postMessageTargetOrigin);
+        });
+
+        // Handle control messages
+        $(window).bind("message", function (e) {
+            if (e.originalEvent.data.indexOf('video.pause') >= 0) {
+                videoPlayer.pause();
+            }
+            else if (e.originalEvent.data.indexOf('video.play') >= 0) {
+                videoPlayer.play();
+            }
+            else if (e.originalEvent.data.indexOf('video.fullscreen') >= 0) {
+                videoPlayer.fullscreen(query["id"]);
+            }
+        });
+    });
+
+    $(window).resize(function () {
+        $("#videoContainer").css("left", Math.floor(($(window).width() - $("#videoDiv").width()) / 2) + "px");
+        $("#videoContainer").css("top", Math.floor(($(window).height() - $("#videoDiv").height()) / 2) + "px");
+    });
+
+</script>
+
+<div id="videoContainer" class="videoContainer" style="left: 0px; top: 0px;">
+    <div id="videoCloseButton" class="videoCloseButton"></div>
+    <div id="videoDiv" class="videoDiv" style="width: 148px; height: 244px;"><div class="pf-container" style="width: 148px; height: 244px;"><video id="Live-Tiles" width="148" height="244" poster="https://web.archive.org/web/20200522155107im_/http://cmsresources.windowsphone.com/windowsphone/en-US/home/Videos/Nokia-Lumia-1020/Live-Tiles/Windows-Phone-Live-Tiles-desktop.png" loop="true" preload="metadata" class="pf-video"><source type="video/ogg; codecs=&quot;theora, vorbis&quot;" src="video_data/Windows-Phone-Live-Tiles-desktop.ogv"><source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="video_data/Windows-Phone-Live-Tiles-desktop.mp4"><track src="https://web.archive.org/web/20200522155107oe_/http://cmsresources.windowsphone.com/windowsphone/en-US/home/Videos/Nokia-Lumia-1020/Live-Tiles/Windows-Phone-Live-Tiles-desktop.xml" kind="captions" label="null" srclang="null"><img src="video_data/Windows-Phone-Live-Tiles-desktop.png" alt="Windows+Phone+Live+Tiles" width="148" height="244"></video><img class="pf-poster" src="video_data/Windows-Phone-Live-Tiles-desktop.png" style="display: none;"><div class="pf-caption-cues-container"></div><div class="pf-controls pf-track-selector"><div class="pf-toggle-control" style="left: 0px;"><button class="pf-button" type="button" title="Show Controls" accesskey="c"><span></span></button></div><div class="pf-pause pf-play-control" style="left: 0px;"><button class="pf-button" type="button" title="Pause" accesskey="p"><span></span></button></div><div class="pf-skip-back-chapter-control" style="left: 100px;"><button class="pf-button" type="button" title="Skip Back Chapter" accesskey="b"><span class="pf-skip-back-chapter-arrow"></span><span class="pf-skip-back-chapter-line"></span></button></div><div class="pf-timeline-control" style="right: 212px; left: 100px;"><button class="pf-button" type="button" title="Playback: 27%"></button><div class="pf-slider-container"><span class="pf-slider-range"></span><span class="pf-slider-load"></span><span class="pf-slider-fill" style="width: 26.5409%;"><button class="pf-button" type="button" title="Decrement Playback Position"></button></span><span class="pf-slider-empty" style="width: 73.4591%;"><button class="pf-button" type="button" title="Increment Playback Position"></button></span><span class="pf-slider-head-container"><span class="pf-slider-head" style="left: 26.5409%;"></span></span></div><div class="pf-timeline-cues-container"></div></div><div class="pf-skip-forward-chapter-control" style="right: 212px;"><button class="pf-button" type="button" title="Skip Forward Chapter" accesskey="n"><span class="pf-skip-forward-chapter-arrow"></span><span class="pf-skip-forward-chapter-line"></span></button></div><div class="pf-time-elapsed-control pf-time-display" title="Time Elapsed" style="right: 212px;"><div>0:00:03</div></div><div class="pf-time-divider-control pf-time-display" style="right: 212px;"><div>/</div></div><div class="pf-time-remaining-control pf-time-display" title="Time Remaining" style="right: 212px;"><div>0:00:12</div></div><div class="pf-sound pf-mute-control" style="right: 182px;"><button class="pf-button" type="button" title="Mute" accesskey="m"><span class="pf-mute-icon"><span class="pf-speaker-base"></span><span class="pf-speaker"></span><span class="pf-sound-waves"><span class="pf-sound-wave-1 pf-sound-wave"></span><span class="pf-sound-wave-2 pf-sound-wave"></span><span class="pf-sound-wave-3 pf-sound-wave"></span></span></span></button></div><div class="pf-volume-control" style="right: 70px;"><button class="pf-button" type="button" title="Volume: 50%"></button><div class="pf-slider-container"><span class="pf-slider-range"></span><span class="pf-slider-fill" style="width: 50%;"><button class="pf-button" type="button" title="Decrement Volume Level"></button></span><span class="pf-slider-empty" style="width: 50%;"><button class="pf-button" type="button" title="Increment Volume Level"></button></span><span class="pf-slider-head-container"><span class="pf-slider-head" style="left: 50%;"></span></span></div></div><div class="pf-track-selector-control" style="right: 35px;"><button class="pf-button" type="button" title="Select Captions/Subtitles" accesskey="t"><span class="pf-track-selector-box">CC</span></button></div><div class="pf-full-browser-control" style="right: 0px;"><button class="pf-button" type="button" title="Full Screen" accesskey="s"><span class="pf-full-browser-box"></span></button></div></div><div class="pf-throbber-control wps-pf-throbber-control" title="Buffering" style="display: none;"><div class="pf-throbber-container"><div class="pf-throbber-node" style="left: 46px; top: 21px; opacity: 0.779167;"></div><div class="pf-throbber-node" style="left: 42.6506px; top: 33.5px; opacity: 0;"></div><div class="pf-throbber-node" style="left: 33.5px; top: 42.6506px; opacity: 0.0708333;"></div><div class="pf-throbber-node" style="left: 21px; top: 46px; opacity: 0.141667;"></div><div class="pf-throbber-node" style="left: 8.5px; top: 42.6506px; opacity: 0.2125;"></div><div class="pf-throbber-node" style="left: -0.650635px; top: 33.5px; opacity: 0.283333;"></div><div class="pf-throbber-node" style="left: -4px; top: 21px; opacity: 0.354167;"></div><div class="pf-throbber-node" style="left: -0.650635px; top: 8.5px; opacity: 0.425;"></div><div class="pf-throbber-node" style="left: 8.5px; top: -0.650635px; opacity: 0.495833;"></div><div class="pf-throbber-node" style="left: 21px; top: -4px; opacity: 0.566667;"></div><div class="pf-throbber-node" style="left: 33.5px; top: -0.650635px; opacity: 0.6375;"></div><div class="pf-throbber-node" style="left: 42.6506px; top: 8.5px; opacity: 0.708333;"></div></div></div></div></div>
+</div>
+
+
+
+</body></html>
+<!--
+     FILE ARCHIVED ON 15:51:07 May 22, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:30:45 Apr 26, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1.121
+  exclusion.robots: 0.039
+  exclusion.robots.policy: 0.024
+  esindex: 0.014
+  cdx.remote: 60.136
+  LoadShardBlock: 1256.615 (3)
+  PetaboxLoader3.datanode: 585.934 (4)
+  PetaboxLoader3.resolve: 528.088 (2)
+  load_resource: 186.752
+-->
