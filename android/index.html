@@ -1,58 +1,174 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" style="--wm-toolbar-height: 1px;"><head><title>Android - User96</title>
-<link href="./css/android.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="./css/android.index.css">
-<style>
-  body.refresh {
-    width:800px;
-  }
-</style>
-<style type="text/css" id="operaUserStyle">
 
-<video width="400" controls>
-  <source src="./images/mov_bbb.mp4" type="video/mp4">
-  <source src="./images/mov_bbb.ogg" type="video/ogg">
-  Your browser does not support HTML video.
-</video>
-
-<p>
-Video courtesy of 
-<a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
-</p>
-
-</style></head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Android | Official Website</title>
+<link href="./css/android.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="./css/android.index.css"/>
+</head>
 <body class="refresh">
+ 
 <div class="g-doc">
 <div class="g-section g-tpl-75-25 a-header">
 <div class="g-unit g-first">
-<h1><a href="./images/logo_android.gif" alt="Android" width="194" height="27"></a></h1>
+<h1><a href="."><img src="./images/logo_android.gif" alt="Android" width="194" height="27"/></a></h1>
 </div>
 <div class="g-unit header-navigation">
 </div>
 </div>
 <div class="g-section a-navbars">
 <ul class="header-nav" id="main-nav">
-<li class="selected"><div><a href="https://u5er-96.github.io/android/">Home</a></div></li>
-<li><div><a href="/web/20090927022746/http://www.android.com/goodies/">Goodies</a></div></li>
-<li><div><a href="/web/20090927022746/http://www.android.com/videos/">Videos</a></div></li>
+<li class="selected"><div><a href="/web/20090228165159/http://www.android.com/">Home</a></div></li>
+<li><div><a href="/web/20090228165159/http://www.android.com/market/">Market</a></div></li>
+<li><div><a href="/web/20090228165159/http://www.android.com/media/goodies.html">Media Room</a></div></li>
+<li><div><a href="/web/20090228165159/http://www.android.com/about/">What is Android?</a></div></li>
 </ul>
 </div>
-<div class="g-section">
-  <br>
-  <h2>Android 1.6 Release</h2>
-  <br>
-  <br>
-  <div class="g-section g-tpl-300-alt">
-    <div class="g-first g-unit">
-      <div class="promo-pad">
-        <img src="./images/android16subtitle.png" alt="This platform release introduces new features for users and developers">
-        <a class="bgb" href="https://web.archive.org/web/20090927022746/http://android-developers.blogspot.com/2009/09/android-16-sdk-is-here.html" onclick="adcGa._trackEvent('Outgoing link clicked', 'Read the Blog Post');">Read the Blog Post</a>
-        <br>
-        <a class="bgb" href="https://web.archive.org/web/20090927022746/http://developer.android.com/sdk/android-1.6-highlights.html" onclick="adcGa._trackEvent('Outgoing link clicked', 'View the Feature List');">View the Feature List</a>
+<div class="g-section g-tpl-75-25">
+  <div class="g-unit g-first">
+    <div class="g-section g-tpl-300-alt promo-wrapper">
+      <div class="g-first g-unit">
+	<div class="promo-pad">
+	  <a href="https://web.archive.org/web/20090228165159/http://market.android.com/"><img src="/web/20090228165159im_/http://www.android.com/images/promo-showcase-alt.gif" alt=""/></a>
+	  <p>See the top applications available now on Android Market and publish your own.</p>
+	  <a class="bgb" href="https://web.archive.org/web/20090228165159/http://market.android.com/">Learn more »</a>
+	</div>
+      </div>
+      <div class="g-unit">
+	<script type="text/javascript">
+	  Tiler = function(tilerId, visibleItemCount) {
+	    this.tiler = document.getElementById(tilerId);
+	    this.allItems = this.tiler.getElementsByTagName('li');
+	    this.total = this.allItems.length;
+	    if (this.total < this.visibleItems) {
+	      return;
+	    }
+	    this.hiddenItems = new Array(this.total);
+	    this.visibleItems = new Array(visibleItemCount);
+	    // Put the HTMLobject pointers into the hiddenItems array.
+	    for (var i=0; i < this.total; i++) {
+	      this.hiddenItems[i] = this.allItems[i];
+	      this.allItems[i].id = 'tiler' + i;
+	      this.allItems[i].getElementsByTagName('img')[0].id = 'tilerImg' + i;
+	    }
+	    // Randomly move hiddenItems to visibleItems, shorten the hiddenItems list.
+	    for (var i=0; i < this.visibleItems.length; i++) {
+	      var randIndex = Math.floor(Math.random() * this.hiddenItems.length );
+	      this.visibleItems[i] = this.hiddenItems[randIndex];
+	      this.hiddenItems.splice(randIndex, 1);
+	      this.visibleItems[i].style.display = 'block';
+	    }
+	  }
+          // Move the hidden node to where the visible node is, then show it.
+	  Tiler.prototype.swapRandom = function() {
+	    var j = Math.floor(Math.random() * this.hiddenItems.length);
+	    var k = Math.floor(Math.random() * this.visibleItems.length);
+	    var T = this.visibleItems[k];
+	    // Fade out visibleItems[k], fade in hiddenItems[j]
+	    this.visibleItems[k].parentNode.insertBefore(this.hiddenItems[j], this.visibleItems[k]);
+	    var oldImage = this.visibleItems[k].getElementsByTagName('img')[0];
+	    var newImage = this.hiddenItems[j].getElementsByTagName('img')[0];
+	    this.visibleItems[k].style.backgroundImage = "url(" + newImage.src + ")";
+	    this.fadeOut(oldImage.id, 100, 0, 500, this.visibleItems[k].id, this.hiddenItems[j].id);
+	    this.visibleItems[k] = this.hiddenItems[j];
+	    this.hiddenItems[j] = T;
+	  }
+	  Tiler.prototype.fadeOut = function(objInside, opacStart, opacEnd, millisec, objOutside, nextObj) {
+	    var speed = Math.round(millisec / 100); // Set the speed.
+	    var timer = 0;
+	    for(i = opacStart; i >= opacEnd; i--) {
+	      setTimeout("changeOpac(" + i + ",'" + objInside + "', '" + objOutside + "','" + nextObj + "')", (timer * speed));
+	      timer++;
+	    }
+	  }
+	  </script>
+	  <script type="text/javascript">
+	    // Actually change the image's opacity. XBC.
+	    function setOpac(opacity, objectToChange) {
+	      var object = document.getElementById(objectToChange).style;
+	      object.opacity = (opacity / 100);
+	      object.MozOpacity = (opacity / 100);
+	      object.KhtmlOpacity = (opacity / 100);
+	      object.filter = "alpha(opacity=" + opacity + ")";
+	    }
+	    // Set the opacity of the image. After the loop is complete, hide the object and restore the hidden image's opacity.
+	    function changeOpac(opacity, objInside, objOutside, nextObj) {
+	      setOpac(opacity, objInside);
+	      if (opacity == 0) {
+		document.getElementById(objOutside).style.display = 'none';
+		setOpac(100, objInside);
+		document.getElementById(objInside).style.backgroundColor = '#fff';
+		document.getElementById(objOutside).style.backgroundImage = 'none';
+		document.getElementById(nextObj).style.display = 'block';
+	      }
+	    }
+	  </script>
+	  <style type="text/css">
+	    .tileItem { display:none; padding:0; margin:0; }
+	  </style>
+	  <div id="showcaseGrid">
+	    <li class="tileItem"><a href="market/#app=pacman"><img src="./images/pacman-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=helloaim"><img src="./images/helloaim-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=bonsaiblast"><img src="./images/bonsaiblast-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=weatherchannel"><img src="./images/weatherchannel-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=shopsavvy"><img src="./images/shopsavvy-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=myspace"><img src="./images/myspace-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=wikitude"><img src="./images/wikitude-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=imeem"><img src="./images/imeem-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=probasketballscores"><img src="./images/probasketballscores-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=braingenius"><img src="./images/braingenius-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=compareeverywhere"><img src="./images/compareeverywhere-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=loopt"><img src="./images/loopt-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=ebay"><img src="./images/ebay-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=isafe"><img src="./images/isafe-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=voximobili"><img src="./images/voximobili-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=labyrinth"><img src="./images/labyrinth-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=iskoot"><img src="./images/iskoot-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=blockbreaker"><img src="./images/blockbreaker-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=bomberman"><img src="./images/bomberman-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=deblob"><img src="./images/deblob-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=texasholdem"><img src="./images/texasholdem-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=fifthgrader"><img src="./images/fifthgrader-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=bejeweled"><img src="./images/bejeweled-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=brainchallenge"><img src="./images/brainchallenge-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=mytracks"><img src="./images/mytracks-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=gmote"><img src="./images/gmote-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=lastfm"><img src="./images/lastfm-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=quickoffice"><img src="./images/quickoffice-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=visa"><img src="./images/visa-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=picsay"><img src="./images/picsay-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=locale"><img src="./images/locale-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=bofa"><img src="./images/bofa-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=lastminute"><img src="./images/lastminute-sm.png" alt=""/></a></li>
+	    <li class="tileItem"><a href="market/#app=qype"><img src="./images/qype-sm.png" alt=""/></a></li>
+	  </div>
+	  <div class="clearer"></div>
+	  <script type="text/javascript">
+	    var theTiler;
+	    theTiler = new Tiler("showcaseGrid", 12);
+	    var x = setInterval("theTiler.swapRandom()", 1500);
+	  </script>
+	</div>
+      </div>
+    </div>
+    <div class="g-unit side">
+      <div class="rebox green">
+	<h2>Featured Videos</h2>
+	<div class="p">
+	  <dl class="a-icons">
+	    <dd><img src="./images/video-amazon.gif" alt=""/> <a href="about/videos.html#video=caseylangenamazonmp3">Casey Langen</a><span>Amazon MP3</span></dd>
+	    <dd><img src="./images/video-imeem.gif" alt=""/> <a href="about/videos.html#video=allanhsuimeem">Allan Hsu</a><span>imeem</span></dd>
+	    <dd><img src="./images/video-compare.png" alt=""/><a href="about/videos.html#video=jeffsharkeycompareeverywhere">Jeff Sharkey</a><span>CompareEverywhere</span></dd>
+	  </dl>
+	  <div class="clearer"></div>
+	  <p>Watch Android developers talk about their applications in the<br/><a href="about/videos.html">Video Showcase &raquo;</a></p>
+	</div>
       </div>
     </div>
   </div>
-</div>
-<br><br>
+  <div class="g-section g-tpl-75-25">
     <div class="g-unit g-first">
       <div class="g-section g-tpl-67-33">
 	<div class="g-unit g-first">
@@ -60,10 +176,10 @@ Video courtesy of
 	    <div class="g-unit g-first">
 	      <div class="p-r">
 		<div class="rebox lil">
-                  <h2>Market</h2>
+		  <h2>Market</h2>
 		  <div class="p">
-		    <p><img src="./images/lil-market.gif" alt="" style="margin-top:1.25em">Browse or publish your own applications on the refreshed Android Market.</p>
-		    <p><a href="https://androidmarket.netlify.app">Go! »</a></p>
+		    <p><img src="./images/lil-market.gif" alt="" style="margin-top:1.25em"/>Browse or publish your own applications on Android Market.</p>
+		    <p><a href="https://web.archive.org/web/20090228165159/http://market.android.com/">Learn more &raquo;</a></p>
 		  </div>
 		</div>
 	      </div>
@@ -73,8 +189,8 @@ Video courtesy of
 		<div class="rebox lil">
 		  <h2>Developers</h2>
 		  <div class="p">
-		    <p><img src="/web/20090927022746im_/http://www.android.com/images/lil-developers.gif" alt="" style="margin-top:1em">Android enables developers to easily create great mobile applications.</p>
-		    <p><a href="https://web.archive.org/web/20090927022746/http://developer.android.com/">Learn more »</a></p>
+		    <p><img src="./images/lil-developers.gif" alt="" style="margin-top:1em"/>Android enables developers to easily create great mobile applications.</p>
+		    <p><a href="https://web.archive.org/web/20090228165159/http://developer.android.com/">Learn more &raquo;</a></p>
 		  </div>
 		</div>
 	      </div>
@@ -84,19 +200,34 @@ Video courtesy of
 	<div class="g-unit">
 	  <div class="p-r">
 	    <div class="rebox lil">
-              <h2>Open Source Project</h2>
+	      <h2>Open Source Project</h2>
 	      <div class="p">
-                <p><img src="./images/lil-opensource.gif" alt="">Access to the entire platform source and enables developers to contribute.</p>
-		<p><a href="https://web.archive.org/web/20090927022746/http://source.android.com/">Learn more »</a></p>
+		<p><img src="./images/lil-opensource.gif" alt=""/>Access to the entire platform source and enables developers to contribute.</p>
+		<p><a href="https://web.archive.org/web/20090228165159/http://source.android.com/">Learn more &raquo;</a></p>
 	      </div>
 	    </div>
 	  </div>
 	</div>
       </div>
-      <p>
-      <a href="/web/20090927022746/http://www.android.com/terms.html">Site Terms of Service</a> -
-      <a href="/web/20090927022746/http://www.android.com/privacy.html">Privacy Policy</a> -
-      <a href="/web/20090927022746/http://www.android.com/branding.html">Brand Guidelines</a>
-      </p>
+      <div class="g-section a-footer">
+	<p>
+	<a href="/web/20090228165159/http://www.android.com/terms.html">Site Terms of Service</a> -
+	<a href="/web/20090228165159/http://www.android.com/privacy.html">Privacy Policy</a> -
+	<a href="/web/20090228165159/http://www.android.com/branding.html">Brand Guidelines</a>
+	</p>
+      </div>
+    </div>
+    <div class="g-unit">
+      <div class="rebox green lil">
+	<h2>In the News</h2>
+	<div class="p">
+	  <p><a href="https://web.archive.org/web/20090228165159/http://android-developers.blogspot.com/2009/02/android-market-update-priced.html">Priced applications now available in Android Market for US users</a></p>
+	  <p><a href="https://web.archive.org/web/20090228165159/http://www.vodafone.com/start/media_relations/news/group_press_releases/2009/vodafone_and_htc_unveil.html">Vodafone and HTC unveil Android-powered phone, HTC Magic</a></p>
+	  <p><a href="https://web.archive.org/web/20090228165159/http://www.optus.com.au/portal/site/aboutoptus/menuitem.813c6f701cee5a14f0419f108c8ac7a0/?vgnextoid=e30be8b09844f110VgnVCM10000002cd780aRCRD&amp;vgnextchannel=233be6b0b0cee110VgnVCM10000002cd780aRCRD">Optus makes HTC Dream available in Australia</a></p>
+	</div>
+      </div>
+    </div>
+  </div>
 </div>
-</div></body></html>
+</body>
+</html>
