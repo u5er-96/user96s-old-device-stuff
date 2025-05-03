@@ -1,0 +1,1527 @@
+/**
+ * @filename android.css
+ * @date October 2008
+ * @supportedby jeremydw@google.com
+ * @fileoverview Styles for Android.com and dependencies
+ */
+
+@import url("https://web.archive.org/web/20090914005336cs_/http://www.google.com/css/goog.css");
+@import url("https://web.archive.org/web/20090914005336cs_/http://www.google.com/css/inlay.css");
+
+/**
+ * It's Android!
+ */
+
+* {
+  margin:0;
+  padding:0;
+}
+body.refresh {
+  background:url(/web/20090914005336im_/http://www.android.com/images/body-gradient-tab.png) repeat-x;
+  /* background:url(/web/20090914005336im_/http://www.android.com/images/bg.png) repeat-x; */
+}
+
+body {
+  background:url(/web/20090914005336im_/http://www.android.com/images/body-gradient.png) repeat-x;
+  color:#333;
+  width:960px;
+  padding-top:17px;
+  font-size:10px;
+  margin:0 auto;
+}
+h1 {
+  margin:0;
+  padding:0;
+}
+a, a:visited {
+  color:rgb(0, 102, 153);
+}
+h2 {
+  font-size:1.65em;
+  color:#669999;
+  margin-bottom:.1em;
+  padding-bottom:0;
+}
+h3 {
+  font-weight:normal;
+  font-size:1.35em;
+  margin-bottom:.25em;
+}
+h2 span {
+  font-weight:normal;
+}
+.lilbox h3 { color:#669999; }
+.a-main .a-box {
+  background:white; 
+  padding:0;
+  }
+    .a-box {
+      margin-bottom:1em;
+}
+.a-box p {
+  margin-top:0;
+}
+.clearer { clear:both; }
+
+.content-box {
+  clear:both;
+  -webkit-border-bottom-right-radius:7px;
+  -webkit-border-top-right-radius:7px;
+  -moz-border-radius-topright:7px;
+  -moz-border-radius-bottomright:7px;
+  background:url(/web/20090914005336im_/http://www.android.com/images/blue-gradient.gif) no-repeat top right #daf3fc;
+}
+
+.hr {
+  background:#c9cfd0;
+  line-height:2px;
+  height:2px;
+  display:block;
+  margin:.5em 0 1.5em;
+}
+
+/**
+ * New style boxes
+ */
+
+#blog li {
+  line-height:normal;
+}
+
+.rebox {
+  background:#daf3fc;
+  margin-bottom:1.5em;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+}
+.rebox.lil p img {
+  display:block;
+  margin-bottom:2em;
+}
+
+.rebox .p {
+  padding:1.5em;
+  line-height:1.25em;
+}
+
+.p-r {
+  padding-right:1.5em;
+}
+
+.rebox h2, .rebox h3 {
+  font-size:16px;
+  color:#fff;
+  display:block;
+  background:url('/web/20090914005336im_/http://www.android.com/images/rebox-gradient.gif') no-repeat center bottom #95c0d0;
+  padding:.5em .5em .5em .75em;
+  -moz-border-radius-topright:5px;
+  -moz-border-radius-topleft:5px;
+  -webkit-border-top-right-radius:5px;
+  -webkit-border-top-left-radius:5px;
+}
+
+.rebox.lil {
+}
+.rebox.lil img {
+  float:left;
+  margin:0 1em 0 0;
+  padding:0 0 3em 0;
+}
+
+.rebox.green {
+  background:#d4e9a9;
+}
+
+.rebox.green h2, .rebox.green h3 {
+  background:url('/web/20090914005336im_/http://www.android.com/images/rebox-gradient-green.gif') no-repeat center bottom #aaca46;
+  font-weight:bold;
+}
+
+.rebox.green a:link, .rebox.green a:visited {
+  color:#360;
+}
+
+/**
+ * Header and footer
+ */
+
+a.bgb {
+  background:url(/web/20090914005336im_/http://www.android.com/images/bgb-bg.gif);
+  no-repeat;
+  display:block;
+  width:189px;
+  height:37px;
+  line-height:37px;
+  text-align:center;
+}
+a:link.bgb, a:visited.bgb {
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+div.corner-pic.rocket {
+  background:url(/web/20090914005336im_/http://www.android.com/images/bot-transparent.gif) no-repeat right;
+}
+
+div.corner-pic.media {
+  background:url(/web/20090914005336im_/http://www.android.com/images/bot-media.gif) no-repeat right;
+  margin-top:-30px;
+}
+
+div.corner-pic.videos {
+  background:url(/web/20090914005336im_/http://www.android.com/images/bot-videos.gif) no-repeat right;
+  margin-top:-25px;
+}
+
+div.corner-pic {
+  margin-top:-10px;
+  display:block;
+  width:900px;
+  height:200px;
+  z-index:-1;
+  position:absolute;
+}
+
+ul#main-nav {
+  margin-top:15px;
+}
+ul#main-nav li {
+  display:block;
+  background:url('/web/20090914005336im_/http://www.android.com/images/tab-off-right.gif') no-repeat top right;
+}
+ul#main-nav li a {
+  color:#fff;
+  width:148px;
+  height:30px;
+  background:url('/web/20090914005336im_/http://www.android.com/images/tabs-fixed.gif') no-repeat;
+  background-color:#abcb48;
+  text-align:center;
+  display:block;
+}
+ul#main-nav li a:hover {
+  background-position:0 -30px;
+}
+ul#main-nav li.selected a, ul#main-nav li.selected a:hover {
+  background-position:0 -60px;
+  background-color:#fff;
+  color:#555;
+}
+ul#sub-nav {
+  background:url(/web/20090914005336im_/http://www.android.com/images/subnav-bg.gif) repeat-x bottom;
+  display:block;
+  height:30px;
+}
+ul#sub-nav li {
+  padding:0 ;
+}
+ul#sub-nav li a {
+  color:#555;
+  padding:0 1.5em;
+  font-weight:normal;
+  text-decoration:underline;
+}
+ul#sub-nav li a:hover {
+  text-decoration:none;
+}
+ul#sub-nav li.selected a {
+  font-weight:bold;
+  text-decoration:none;
+  background:url(/web/20090914005336im_/http://www.android.com/images/subnav-active.gif) no-repeat bottom center;
+  margin-bottom:-10px;
+  height:20px;
+}
+ul#sub-nav li.selected a:hover {
+  border:none;
+  margin:0;
+  background:none;
+  background:url(/web/20090914005336im_/http://www.android.com/images/subnav-active.gif) no-repeat bottom center;
+  margin-bottom:-10px;
+  height:20px;
+}
+ul#sub-nav li.aux {
+  float:right;
+}
+ul#sub-nav li.aux a, ul#sub-nav li.aux a:hover {
+  font-weight:bold;
+  background:#669999;
+  margin:-1px;
+  border-right:1px solid #86adbc;
+  border-bottom:1px solid #86adbc;
+  border-left:1px solid #bee9f9;
+  border-top:1px solid #bee9f9;
+  color:#fff;
+  text-decoration:none;
+  margin-right:.5em;
+  padding-bottom:.25em;
+}
+ul#sub-nav li.aux a:hover {
+  background:#95c0d0;
+}
+
+.a-navbars {
+  margin-bottom:1.5em;
+}
+
+ul.header-nav {
+  padding:0;
+  list-style-type:none;
+  margin:0;
+}
+ul.header-nav li {
+  margin-right:2px;
+  float:left;
+  padding:0;
+}
+ul.header-nav li a {
+  line-height:29px;
+  text-decoration:none;
+  font-weight:bold;
+  display:block;
+  float:left;
+}
+.header-navigation {
+  text-align:right;
+}
+.a-header a {
+  color:rgb(127, 169, 181);
+}
+.a-header img {
+  margin-top:10px;
+}
+.cactus-bar {
+  margin-top:2em;
+  line-height:0;
+  height:2px;
+  padding:0;
+  margin-bottom:1.5em;
+  display:block;
+  background:url(/web/20090914005336im_/http://www.android.com/images/hr-green-gradient.gif) no-repeat top right #acd659;
+  clear:both;
+  overflow:hidden;
+}
+.cactus-bar.solid {
+  background-image:none;
+}
+.water-bar {
+  height:2px;
+  padding:0;
+  margin-bottom:2em;
+  display:block;
+  clear:both;
+  background:url(/web/20090914005336im_/http://www.android.com/images/hr-blue-gradient.gif) no-repeat bottom right #95c0d0;
+}
+.a-footer {
+  color:rgb(127,169,181);
+  margin:2em 0 0 0;
+}
+.a-footer.index {
+  margin:0;
+}
+
+/**
+ * Main page top
+ */
+
+.intro-box h2 {
+  padding-bottom:.5em;
+}
+.tos h2 {
+  margin-bottom:1em;
+}
+.peeking {
+  background:url(/web/20090914005336im_/http://www.android.com/images/bot-peeking.gif) no-repeat;
+  background-position:bottom right;
+  padding-right:100px;
+  margin-bottom:2px;
+}
+.peeking-down {
+  background:url(/web/20090914005336im_/http://www.android.com/images/bot-peekingdown.gif);
+  display:block;
+  width:57px;
+  height:21px;
+  float:right;
+  margin-top:-20px;
+}
+
+/**
+ * Main page sidebar
+ */
+
+.jetpack {
+  display:block;
+  width:210px;
+  height:145px;
+  margin-top:-5px;
+  float:right;
+  background:url(/web/20090914005336im_/http://www.android.com/images/bot-jetpack.png);
+}
+ul.external-links li {
+  line-height:1.25em;
+  padding-right:2em;
+  margin-bottom:.5em;
+}
+.external-links a {
+  padding:0;
+  margin:0;
+}
+.external-links span {
+  display:block;
+  font-size:.85em;
+}
+
+/**
+ * Main page video
+ */
+
+.promo-wrapper {
+  padding:0;
+  margin-top:3em;
+  margin-bottom:2em;
+}
+h2.title {
+  margin-bottom:1em;
+}
+
+.promo-pad {
+  padding:1em;
+  margin-left:1em;
+  font-size:1.25em;
+}
+.promo-pad img {
+  margin-bottom:2em;
+}
+.promo-pad p {
+  padding-right:4em;
+  margin-bottom:.5em;
+}
+
+.hidden-vid {
+  display:none;
+}
+.video-box {
+  margin-top:.5em;
+  float:left;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  padding:10px;
+  background:white;
+  border:1px solid #ccc;
+  text-align:center;
+}
+#vidContainer {
+  height:292px;
+  width:355px;
+}
+#vidCaption {
+  padding:.25em 0;
+  font-size:.85em;
+  font-weight:bold;
+}
+#vidCaption span {
+  font-weight:normal;
+}
+ul.tabs {
+  width:230px;
+  float:left;
+  margin-right:30px;
+  padding-left:30px;
+  padding-top:20px;
+  margin-bottom:0;
+  padding-bottom:0;
+}
+ul.tabs li {
+  list-style-type:none;
+  line-height:1.25em;
+  margin-bottom:.25em;
+}
+ul.tabs li p {
+  padding-left:7px;
+  padding-top:5px;
+}
+ul.tabs li a {
+  display:block;
+  font-weight:bold;
+  margin-bottom:.5em;
+  padding:7px;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  text-decoration:none;
+  background:url(/web/20090914005336im_/http://www.android.com/images/arrow-closed.gif) #fff no-repeat 205px 7px;
+}
+ul.tabs li p {
+  display:none;
+}
+ul.tabs li.selected a, ul.tabs li a:active {
+  background:url(/web/20090914005336im_/http://www.android.com/images/arrow-open.gif) #ff9900 no-repeat 205px 7px;
+  color:#fff;
+}
+ul.tabs li a:hover {
+  background:url(/web/20090914005336im_/http://www.android.com/images/arrow-closed.gif) #fff no-repeat 205px 7px;
+}
+ul.tabs li.selected a:hover {
+  background:url(/web/20090914005336im_/http://www.android.com/images/arrow-open.gif) #ff9900 no-repeat 205px 7px;
+}
+ul.tabs li.selected a:hover, ul.tabs li.selected a:active {
+  color:#fff;
+}
+ul.tabs li.selected p {
+  display:block;
+}
+ul.tabs li a:hover {
+  text-decoration:underline;
+}
+ul.tabs li img {
+  float: right;
+  margin-top:1px;
+}
+.video-box object {
+  padding:6px;
+  width:340px;
+  height:280px;
+}
+
+/**
+ * Main page callouts
+ */
+
+ul.blog {
+  padding-left:1.5em;
+  margin:0;
+  padding-bottom:0;
+}
+
+#showcaseGrid {
+  text-align:center;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border:1px solid #bdc0b6;
+  margin-top:.5em;
+  width:385px;
+  display:block;
+  padding:1em;
+  background:#efefef;
+  height:199px;
+}
+#showcaseGrid li {
+  list-style-type:none;
+  width:90px;
+  height:60px;
+  margin:1px;
+  border:1px solid #c3cbb4;
+  display:none;
+  background-color:#fff;
+  line-height:0;
+  padding:0;
+  float:left;
+  line-height:0;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+#showcaseGrid li:hover {
+  border:1px solid #8e9483;
+}
+#showcaseGrid a {
+  padding:0;
+  margin:0;
+  line-height:0;
+}
+#showcaseGrid img {
+  padding:0;
+  line-height:0;
+  margin:0 auto;
+}
+
+.home-opensource {
+  text-align: center;
+  font-size:1.25em;
+}
+.home-opensource p {
+  padding-bottom:.5em;
+}
+
+.lilboxes {
+  background:url(/web/20090914005336im_/http://www.android.com/images/blue-gradient.gif) no-repeat top right;
+  padding-top:4px;
+}
+.lilbox {
+  float:left;
+  padding:15px;
+  margin:0;
+  height:175px;
+  margin-right:4px;
+  padding-bottom:0;
+  background:#daf3fc;
+}
+.lilbox h3 {
+  padding-left:55px;
+  height:50px;
+  line-height:50px;
+  margin-bottom:.5em;
+  background:no-repeat;
+}
+/* Changes for Android cloud */
+.market { width:224px; height:170px; }
+.developers { width:166px; height:170px; }
+.opensource { width:224px; height:170px; margin-right:0; -moz-border-radius-bottomright:7px; -webkit-border-bottom-right-radius:7px; }
+.market h3 { background-image:url(/web/20090914005336im_/http://www.android.com/images/lil-market.gif); }
+.developers h3 { background-image:url(/web/20090914005336im_/http://www.android.com/images/lil-developers.gif); }
+.opensource h3 { background-image:url(/web/20090914005336im_/http://www.android.com/images/lil-opensource.gif); background-position:0 0px; height:50px; margin-top:-15px; padding-top:15px;}
+
+.updated { font-size:10px; color:#666; margin-top:-10px; margin-left:.5em; }
+
+/**
+ * Sidebar
+ */
+
+.a-aux {
+  -webkit-border-top-left-radius:7px;
+  -webkit-border-bottom-left-radius:7px;
+  -moz-border-radius-topleft:7px;
+  padding-top:0;
+  background-color:#d4e9a9;
+}
+.dripping {
+  background:url(/web/20090914005336im_/http://www.android.com/images/strokes-green.gif) no-repeat bottom #d4e9a9; /* Android cloud */
+  padding-bottom:7em; /* Android cloud */
+}
+.a-aux a {
+  color:#360;
+}
+.a-aux h2, .a-aux h3 {
+  color:#555;
+  background:#a5c639;
+  color:#fff;
+  padding:.5em .25em .25em .5em;
+  margin-bottom:1em;
+}
+.a-aux .a-box ul {
+  list-style-type:none;
+  padding:0 1.5em;
+}
+.a-aux .a-box p {
+  padding-bottom:.75em;
+  }
+  .a-aux p {
+    margin:0 1.5em;
+    padding:0;
+}
+.jetpack-box {
+  height:180px;
+  background:url(/web/20090914005336im_/http://www.android.com/images/jetpack-home.gif) no-repeat bottom right;
+  margin-bottom:0;
+}
+.jetpack-box p {
+  padding-right:60px;
+  padding-bottom:.75em;
+    }
+    .top-box h2 {
+      -webkit-border-top-left-radius:7px;
+      -moz-border-radius-topleft:7px;
+}
+.dev-favs img {
+  float:right;
+  margin-right:10px;
+  margin-top:10px;
+  margin-left:15px;
+  border:1px solid #ccc;
+    }
+    .dev-faves a {
+
+}
+
+/**
+ * Timeline
+ */  
+
+#timeline { height:1540px; padding-top:30px; background:url(/web/20090914005336im_/http://www.android.com/images/timeline/clouds.gif) no-repeat  #daf3fc; clear:both; display:block; -webkit-border-radius:7px; -moz-border-radius: 7px; 
+}
+.timeline-intro {
+  margin-bottom:1.25em;
+}
+.timeline-intro h2 {
+  font-weight:normal;
+}
+
+/**
+ * Timeline lines
+ */
+
+.ele {
+  display:block;
+  position:absolute;
+  z-index:1;
+}
+#line1 {
+  background:url(/web/20090914005336im_/http://www.android.com/images/timeline/line1.gif); width:287px; height:183px;margin-top:170px; margin-left:350px;
+}
+#line2 {
+  background:url(/web/20090914005336im_/http://www.android.com/images/timeline/line2.gif); width:402px; height:167px;margin-top:400px; margin-left:270px;
+}
+#line3 {
+  background:url(/web/20090914005336im_/http://www.android.com/images/timeline/line3.gif); width:178px; height:106px;margin-top:630px; margin-left:380px;
+}
+#line4 {
+  background:url(/web/20090914005336im_/http://www.android.com/images/timeline/line4.gif); width:219px; height:101px;margin-top:850px; margin-left:280px;
+}
+#line5 {
+  background:url(/web/20090914005336im_/http://www.android.com/images/timeline/line5.gif); width:174px; height:182px;margin-top:940px; margin-left:500px;
+}
+#line6 {
+  background:url(/web/20090914005336im_/http://www.android.com/images/timeline/line6.gif); width:67px; height:137px;margin-top:1190px; margin-left:500px;
+}
+#line7 {
+  background:url(/web/20090914005336im_/http://www.android.com/images/timeline/line7.gif); width:50px; height:89px;margin-top:1470px; margin-left:450px;
+}
+
+#the-flyer {
+  width:350px;
+  height:405px;
+  background:url(/web/20090914005336im_/http://www.android.com/images/timeline/flying.gif) right;
+}
+#oha { width:165px; height:166px; background:url(/web/20090914005336im_/http://www.android.com/images/timeline/oha.png); margin-top:70px; margin-left:680px; z-index:2; }
+#g1 {
+  background:url(/web/20090914005336im_/http://www.android.com/images/timeline/g1.png); width:135px; height:137px; margin-top:900px; margin-left:700px; z-index:2;
+}
+
+/**
+ * Timeline bubbles
+ */
+
+.timer {
+  padding:15px;
+  background-color:#fff;
+  border:5px solid #a1d8da;
+  -webkit-border-radius:9px;
+  -moz-border-radius:9px;
+  width:300px;
+  position:absolute;
+  z-index:1;
+}
+.timer h3 { font-weight:bold; font-size:1.15em; padding-bottom:.15em; }
+.timer h4 { padding:0; }
+.timer p { padding-top:10px; padding-bottom:0; color:#669999; }
+.timepic { text-align:center; }
+
+#nov0507 { margin-left:390px; width:360px; margin-top:20px; }
+#nov0507 p { padding-right:120px; }
+
+#nov1207 { margin-left:100px; margin-top:300px; width:270px; }
+#nov1207 img { float:right; margin-left:.75em; margin-top:.75em; margin-right:.25em; }
+
+#apr1708 { margin-left:500px; margin-top:470px; width:320px; }
+#apr1708 img { margin-top:.5em; margin-bottom:.5em; }
+
+#aug2808 { margin-left:150px; margin-top:670px; width:220px; }
+#aug2808 p { padding-right:1em; }
+
+#sep2308 { margin-top:850px; margin-left:470px; padding-right:40px; width:240px; }
+
+#sep2308-2 { margin-top:1050px; margin-left:150px; width:320px; }
+#sep2308-2 .timepic { margin-left:40px;}
+#devel-badge { margin-top:1140px; margin-left:120px; width:108px; height:112px; background:url(/web/20090914005336im_/http://www.android.com/images/timeline/badge-dev.png); }
+
+#q42008 { margin-top:1300px; margin-left:400px; width:340px; }
+#osp-badge { margin-top:1290px; margin-left:660px; width:108px; height:112px; background:url(/web/20090914005336im_/http://www.android.com/images/timeline/badge-osp.png); }
+
+#future { background-color:#95c0d0; color:#fff; border:0; text-align:center;
+  width:250px; margin-top:1540px; height:20px; margin-left:340px; -moz-border-radius:15px; -webkit-border-radius:15px; }
+#future h3 { color:#fff; padding-bottom:0; }
+
+/**
+ * Market showcase
+ */
+
+.shopping-bag {
+  background:url('/web/20090914005336im_/http://www.android.com/images/shopping-bag.png') no-repeat;
+  padding-left:100px;
+  margin-bottom:.75em;
+}
+.shopping-bag h2 {
+  padding-bottom:.25em;
+}
+#market-box {
+  padding:2em 3em;
+  -webkit-border-bottom-right-radius:7px;
+  -webkit-border-top-right-radius:7px;
+  -moz-border-radius-topright:7px;
+  -moz-border-radius-bottomright:7px;
+}
+#market-box h2 {
+  padding-bottom:.25em;
+}
+
+/**
+ * Showcase thumbnails
+ */
+
+#arrow-left, #arrow-right {
+  display:block;
+  width:40px;
+  height:110px;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  background-repeat:no-repeat;
+  position:absolute;
+  z-index:3;
+}
+#arrow-left {
+  background-position:11px 46px;
+}
+#arrow-right {
+  background-position:14px 46px;
+  margin-left:650px;
+}
+.arrow-left-off, #arrow-left:hover { 
+  background-image:url(/web/20090914005336im_/http://www.android.com/images/arrow-left-off.gif);
+  background-color:#fff;
+}
+.arrow-left-on {
+  background-image:url(/web/20090914005336im_/http://www.android.com/images/arrow-left-on.gif);
+  background-color:#dce9b1;
+  cursor:pointer;
+}
+.arrow-right-off, #arrow-right:hover { 
+  background-image:url(/web/20090914005336im_/http://www.android.com/images/arrow-right-off.gif);
+  background-color:#fff;
+}
+.arrow-right-on {
+  background-image:url(/web/20090914005336im_/http://www.android.com/images/arrow-right-on.gif);
+  background-color:#dce9b1;
+  cursor:pointer;
+}
+.app-grid-container {
+}
+
+div#list-clip { height:110px; width:640px; margin-left:45px; display:block; }
+div#list-clip { overflow:hidden; position:absolute; z-index:2; float:left; }
+
+#app-list { left:0; }
+div#app-list { z-index:1; position:absolute; }
+
+#app-grid {
+  background:#f3fbd2;
+  padding:1.25em 1em .25em;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  width:105px;
+}
+#app-grid span {
+  display:block;
+}
+#app-list, #app-grid a {
+  display:block;
+  margin-top:0;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  text-decoration:none;
+  margin-right:6px;
+  margin-bottom:15px;
+  color:rgb(0, 102, 153);
+  margin-left:5px;
+}
+#app-list, #app-grid a.selected, #app-list a:active.selected, #app-list a:hover.selected, #app-grid a:hover.selected {
+  font-weight:bold;
+  padding:5px;
+  background: #ff9900;
+  margin-top:-5px;
+  margin-left:0;
+  margin-bottom:10px;
+  color:#fff;
+}
+#app-list a:hover, #app-list a:active, #app-grid a:hover {
+  background:#fff;
+  color:rgb(0, 102, 153);
+  padding:5px;
+  margin-top:-5px;
+  margin-left:0px;
+  margin-bottom:10px;
+}
+#app-list a:hover span, #app-list a:active span {
+  text-decoration:underline;
+}
+#app-list img, #app-grid img {
+  border:1px solid #c3d4d6;
+  width:50px;
+  height:50px;
+  float:left;
+}
+#app-list span, #app-grid span {
+  font-size:.85em;
+  padding-top:.25em;
+  padding-bottom:.25em;
+  max-width:90px;
+}
+
+/**
+ * Market showcase large pictures
+ */
+
+#publish-container {
+  text-align:center;
+  float:right; display:block; width:240px; height:50px; text-align:center; padding:.5em 1em; 
+  margin-left:4em;
+}
+#publish-container .bgb {
+  margin:0 auto;
+}
+#publish-container p {
+  margin-bottom:0;
+  margin-top:0;
+  padding:5px 0;
+}
+#publish-link {
+  background-color:#A5C639;
+  display:block;
+  padding:.5em .5em;
+  margin:0 auto;
+  width:80%;
+  color:#fff;
+  font-weight:bold;
+  text-decoration:none;
+  font-size:1.15em;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-width:2px solid;
+}
+a:hover#publish-link {
+  background:#849B31;
+}
+
+.pic-container { width:50%; }
+.desc-container { width:50%; }
+
+#app-storage {
+  display:none;
+}
+.app-wrapper {
+  margin-left:3em;
+  margin-right:3em;
+}
+#app-pics-wrapper {
+  padding:2em 3em;
+  background:#d4e9a9;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  margin-bottom:1.5em;
+  min-height:400px;
+}
+#app-pics {
+  margin-top:1em;
+}
+#app-pics img {
+  border:1px solid #555;
+  width:140px;
+  height:210px;
+  display:block;
+  float:left;
+  margin-right:1.5em;
+  }
+  #app-pics img.rotated {
+    width:295px;
+    height:210px;
+    }
+    #app-pics img.last {
+      margin-right:0;
+    }
+    #droid-name {
+      font-size:1.5em;
+      padding-bottom:.25em;
+    }
+    #droid-name .locale {
+      font-size:.75em;
+      font-weight:normal;
+    }
+    #droid-desc {
+      margin-top:2em;
+      margin-bottom:2em;
+    }
+    #droid-url {
+    }
+    a.droid-vid {
+      padding-right:17px;
+      background:url(/web/20090914005336im_/http://www.android.com/images/videocamera.gif) no-repeat right;
+    }
+    #droid-locale { 
+      float:left;
+    }
+    #droid-dev {
+    }
+    /**
+     * Guidelines
+     */
+
+.hr-bottom {
+  border-bottom:1px solid #dedede;
+  margin-bottom:1em;
+  padding-bottom:1em;
+}
+.hr-top {
+  border-top:1px solid #dedede;
+  margin-top:1em;
+  padding-top:1em;
+}
+
+/**
+ * Lists with images
+ */
+
+dl.a-icons {
+  width:100%;
+  clear:both;
+  margin-bottom:1em;
+}
+dl.a-icons dd {
+  display:block;
+  clear:both;
+}
+dl.a-icons span {
+  display:block;
+  margin-top:3px;
+  font-size:.85em;
+}
+dl.a-icons dd img {
+  float:left;
+  border:1px solid #c3cbb4;
+  margin:0em .75em .75em 0;
+  padding:0;
+}
+
+
+/**
+ * Videos
+ */
+
+#video-container {
+  width:543px;
+  height:496px;
+  background:url(/web/20090914005336im_/http://www.android.com/images/video-container.png) no-repeat;
+  display:block;
+}
+#video-padding { padding-left:5.5em; padding-top:3.8em; }
+.videothumbs-sidebar { padding-bottom:1em; }
+.videothumbs-sidebar .a-box { margin-bottom:0; }
+.videothumbs-container { padding-left:1em; }
+.v-thumb {
+  clear:both; margin-right:1.5em; margin-bottom:1.5em;
+  width:120px;
+  padding:1em;
+}
+.v-thumb img { border:1px solid #ccc; margin-bottom:.75em;}
+.v-thumb span { display: block; }
+.a-box.first-box h2 {
+  -webkit-border-top-left-radius:7px;
+  -moz-border-radius-topleft:7px;
+}
+.more-videos { margin-top:2em; }
+.video-droids img { margin-top:2em; }
+#active-channel {
+  display:none;
+}
+h2#active-title {
+  margin-bottom:1em;
+}
+#active-title span {
+  color:#555;
+  font-size:.80em;
+  display:block;
+}
+
+/**
+ * New Market
+ */
+
+#small-tabs {
+  width:120px;
+  float:left;
+  list-style-type:none;
+  padding:0;
+}
+#small-tabs a {
+  display:block;
+  padding:.5em;
+}
+#small-tabs .selected-tab a {
+  background:#f3fbd2;
+}
+.thumb-grid-container {
+  background:#f3fbd2;
+  float:left;
+  width:250px;
+  min-height:400px;
+}
+.thumb-grid a.selected {
+  background:#ff9900;
+  color:#fff;
+}
+.thumb-grid {
+  display:none;
+  padding:5px;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+}
+.thumb-grid a img {
+  margin-bottom:5px;
+  margin-top:5px;
+  border:1px solid #ccc;  
+  width:80px;
+  height:53px;
+}
+.thumb-grid a {
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  margin:5px;
+  text-decoration:none;
+  text-align:center;
+  width:100px;
+  float:left;
+  padding:.5em;
+  background:#fff;
+  margin-bottom:10px;
+}
+.thumb-grid a {
+  font-size:.85em;
+}
+.thumb-grid a span {
+  display:block;
+}
+
+/**
+ * Legal pages
+ */
+
+#language-switcher {
+  display:none;
+  float:right;
+}
+
+/**
+ * Inside pages
+ */
+
+.g-doc.inside h2, h2.large {
+  font-size:1.85em;
+}
+textarea.embedder {
+  width:500px;
+  height:50px;
+  font-family:'Courier New','Courier';
+  font-size:12px;
+}
+.media-item {
+  border:1px solid #dedede; margin-bottom:1em;
+}
+.sidebarpad {
+  padding-right:.5em;
+}
+.padder {
+  padding:2em;
+}
+.spadder {
+  padding:1em;
+}
+
+/**
+ * New Market Showcase
+ */
+
+div#list-clip-new { height:110px; width:500px; margin-left:45px; display:block; }
+div#list-clip-new { overflow:hidden; position:absolute; z-index:2; float:left; }
+
+ul#market-tabs {
+  padding-left:0;
+  list-style-type:none;
+}
+ul#market-tabs li a {
+  display:block;
+  -moz-border-radius-topleft:5px;
+  -moz-border-radius-bottomleft:5px;
+  -webkit-border-top-left-radius:5px;
+  -webkit-border-bottom-left-radius:5px;
+  color:#666;
+  font-weight:bold;
+  padding-left:8px;
+  line-height:24px;
+  background:#daf3fc;
+}
+ul#market-tabs li a:hover {
+  background:#f3fbd2;
+}
+ul#market-tabs li.selected a {
+  background:url(/web/20090914005336im_/http://www.android.com/images/market-tabs-active-bg.gif) repeat-y right #a5c639;
+  color:#fff;
+  text-decoration:none;
+}
+
+.thumbgrids {
+  padding-left:2em;
+}
+
+/**
+ * More new market
+ */
+
+#arrow-left-new, #arrow-right-new {
+  display:block;
+  width:40px;
+  height:110px;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  background-repeat:no-repeat;
+  position:absolute;
+  z-index:3;
+}
+#arrow-left-new {
+  background-position:11px 46px;
+}
+#arrow-right-new {
+  background-position:14px 46px;
+  margin-left:590px;
+}
+#app-list-new { left:0; }
+div#app-list-new { z-index:1; position:absolute; }
+
+#app-list-new a {
+  width:100px;
+  display:block;
+  margin-top:0;
+  float:left;
+  padding:7px;
+  background:#fff;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  text-decoration:none;
+  margin-right:5px;
+  text-align:center;
+  margin-bottom:20px;
+}
+#app-list-new a.last {
+  margin-right:0;
+}
+#app-list-new a.selected, .app-list-new a:active.selected, .app-list-new a:hover.selected {
+  background:#ff9900;
+  color:#fff;
+}
+#app-list-new a:hover, .app-list-new a:active {
+  background:#dce9b1;
+  color:rgb(0, 102, 153);
+}
+#app-list-new a:hover span, .app-list-new a:active span {
+  text-decoration:underline;
+}
+#app-list-new img {
+  border:1px solid #c3d4d6;
+  width:90px;
+  height:60px;
+}
+#app-list-new span {
+  display:block;
+  text-align:center;
+  font-size:.85em;
+  padding-top:.5em;
+}
+
+/**
+ * Homepage
+ */
+
+.g-unit.side {
+  margin-top:2em;
+}
+
+.blue-box{ display:block; -webkit-border-bottom-right-radius:7px; -moz-border-radius-bottomright:7px; margin-top:1em; background:url(/web/20090914005336im_/http://www.android.com/images/blue-gradient.gif) no-repeat top right #daf3fc; padding:2em 2em 1em 1.5em; }
+/* .blue-box h2 { background:#95c0d0; display:block; padding:.5em; color:#fff; margin-bottom:1em; } */
+
+#homepage-promo {
+  -webkit-border-top-right-radius:7px;
+  -moz-border-radius-topright:7px;
+  border:1px solid #c2e0eb;
+  background:#fff;
+}
+#homepage-promo .spanner h3 {
+  padding:0;
+  margin:0;
+}
+#homepage-promo .spanner {
+  -webkit-border-top-left-radius:7px;
+  -moz-border-radius-topright:7px;
+  margin:0;
+  padding:1.25em 1.25em 1.25em 2em;
+  color:#fff;
+  background:#a5c639;
+}
+
+ul#homepage-tabs {
+  list-style-type:none;
+  padding:0;
+  margin:1em 0 0 0;
+}
+ul#homepage-tabs li {
+  padding:0;
+  margin:0;
+  margin-right:-.5em;
+}
+ul#homepage-tabs li.selected {
+  margin-right:-20px;
+  display:block;
+  text-decoration:none;
+  line-height:normal
+  -webkit-border-top-left-radius:7px;
+  -moz-border-radius-topleft:7px;
+  -webkit-border-bottom-left-radius:7px;
+  -moz-border-radius-bottomleft:7px;
+}
+ul#homepage-tabs li.selected a {
+  color:#fff;
+  background:url(/web/20090914005336im_/http://www.android.com/images/homepage/homepage-tab-selected.gif) repeat-y right #95c0d0;
+  font-weight:bold;
+  -webkit-border-top-left-radius:7px;
+  -moz-border-radius-topleft:7px;
+  -webkit-border-bottom-left-radius:7px;
+  -moz-border-radius-bottomleft:7px;
+}
+ul#homepage-tabs li a:hover {
+  background:#c2e0eb;
+}
+ul#homepage-tabs li a span {
+  display:block;
+  font-size:.75em;
+  font-weight:normal;
+  color:#555;
+}
+ul#homepage-tabs li.selected a span {
+  color:#fff;
+}
+ul#homepage-tabs li a {
+  text-decoration:none;
+  font-size:1.15em;
+  display:block;
+  padding:1em;
+  background:#daf3fc;
+  margin-bottom:.5em;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+}
+ul#homepage-tabs li.last {
+  margin-bottom:0;
+}
+.home-section {
+  padding-right:3em;
+}
+.home-section .content {
+  padding:1.5em 1em 2em 2em;
+}
+.home-section h3 {
+  color:#669999;
+}
+.home-section p {
+  font-size:1.15em;
+}
+div.homepage-bgb {
+  font-size:1.15em;
+}
+div.homepage-bgb:hover {
+}
+div.homepage-bgb a {
+  color:#360;
+}
+
+/**
+ * Videos page
+ */
+
+#video-wrapper {
+  margin-top:.5em;
+  text-align:center;
+  background:#b1b1b1;
+  /* background:url(/web/20090914005336im_/http://www.android.com/images/active-video-bg.gif) repeat-x #dfdfdf; */
+  margin-bottom:2em;
+  margin:0 auto;
+  margin-bottom:1.5em;
+}
+
+ul#channel-list {
+  list-style-type:none;
+  padding:0;
+  clear:both;
+  margin-bottom:-1px;
+  margin-left:1em;
+}
+
+ul#channel-list li {
+  float:left;
+  display:block;
+  padding:0;
+  margin:0 3px 0 0;
+  line-height:25px;
+}
+
+ul#channel-list li a {
+  -webkit-border-top-left-radius:7px;
+  -webkit-border-top-right-radius:7px;
+  -moz-border-radius-topright:7px;
+  -moz-border-radius-topleft:7px;
+  background:#95c0d0;
+  color:#fff;
+  text-decoration:none;
+  padding:.45em 1.5em;
+  font-weight:bold;
+}
+
+ul#channel-list li.main  {
+  background:#fff;
+  color:#555;
+}
+ul#channel-list li.main {
+  padding:0 1em;
+}
+
+ul#channel-list li.selected a {
+  font-weight:bold;
+  text-decoration:none;
+  color:#555;
+  background:#daf3fc;
+  border-bottom:1px solid #daf3fc;
+}
+ul#channel-list li:hover a {
+  background:#85acba;
+}
+ul#channel-list li.selected:hover a {
+  background:#daf3fc;
+}
+.video-list-container p {
+  margin-left:4em;
+}
+p.channel-select {
+  margin-left:1em;
+}
+
+ul.video-list li.caption {
+  display:block;
+  width:100%;
+  height:1em;
+}
+ul.video-list {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  display:none;
+  margin-left:4em;
+}
+ul.video-list.selected {
+  display:block;
+}
+ul.video-list li.selected img {
+  background:#ff9900;
+}
+ul.video-list li.selected a {
+  text-decoration:none;
+  color:#555;
+}
+ul.video-list li:hover img {
+  border:1px solid #ff9900;
+}
+ul.video-list li {
+  float:left;
+  display:block;
+  width:200px;
+  margin:0 .5em 1em 0;
+  line-height:1em;
+  height:120px;
+}
+ul.video-list li img {
+  background:#fff;
+  padding:.5em;
+  border:1px solid #dedede;
+  margin-bottom:.25em;
+  width:100px;
+  height:75px;
+}
+ul.video-list li a span {
+  display:block;
+  font-size:.85em;
+}
+
+div.market-forms {
+  margin-left:100px;
+  margin-top:1.5em;
+}
+
+ul.forms {
+  list-style-type:none;
+  padding:0;
+}
+ul.forms label {
+  line-height:1.5em;
+  font-weight:bold;
+  margin-bottom:.25em;
+  display:block;
+}
+ul.forms input {
+  margin-bottom:1em;
+  width:200px;
+}
+ul.forms input[type=text], ul.forms textarea {
+  padding:3px;
+  color:#555;
+  font-size:1.2em;
+  margin-bottom:1.5em;
+}
+ul.forms input[type=file] {
+  margin-top:.5em;
+}
+div.market-forms .bgb {
+  font-size:1.2em;
+  margin-bottom:1.5em;
+}
+ul.forms textarea {
+  font-size:1em;
+}
+ul.forms ins {
+  display:none;
+}
+ul.forms label span {
+  font-size:.85em;
+  color:#999;
+  font-weight:normal;
+}
+ul.forms textarea {
+  width:400px;
+  height:40px;
+}
+
+/**
+ * Android FormBox
+ */
+
+.android-form .a-header {
+  margin-bottom:2em;
+}
+.g-form label {
+  font-weight:bold;
+}
+
+.langSel {
+  float:right;
+}
+
+/*
+     FILE ARCHIVED ON 00:53:36 Sep 14, 2009 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:38:32 May 03, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.549
+  exclusion.robots: 0.023
+  exclusion.robots.policy: 0.01
+  esindex: 0.01
+  cdx.remote: 32.571
+  LoadShardBlock: 174.366 (3)
+  PetaboxLoader3.datanode: 65.411 (4)
+  PetaboxLoader3.resolve: 164.847 (2)
+  load_resource: 90.84
+*/
