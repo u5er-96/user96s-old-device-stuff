@@ -5,8 +5,8 @@ body {
     -webkit-text-size-adjust: none;
     min-height: 416px;
     font-family: helvetica,sans-serif;
-    -webkit-background-size: 0.438em 100%;
     background: -webkit-gradient(linear,left top,right top,from(#c5ccd4),color-stop(71%, #c5ccd4),color-stop(72%, #cbd2d8),to(#cbd2d8));
+    -webkit-background-size: 0.438em 100%;
     -webkit-touch-callout: none
 }
 
@@ -348,7 +348,7 @@ a:hover .arrow {
 
 #tributton .links,#duobutton .links {
     height: 30px;
-    -webkit-border-image: url("../images/tributton.png") 0 4 0 4;
+    -webkit-border-image: url("https://u5er-96.github.io/market/images/tributton.png") 0 4 0 4;
     border-width: 0 4px 0 4px;
     margin: 0 auto 0px auto;
     position: relative;
@@ -397,7 +397,7 @@ a:hover .arrow {
 }
 
 #triselectionbuttons,#duoselectionbuttons {
-    -webkit-border-image: url('../images/navbutton.png') 0 5 0 5;
+    -webkit-border-image: url('https://u5er-96.github.io/market/images/navbutton.png') 0 5 0 5;
     border-width: 0 5px 0 5px;
     position: relative;
     margin: auto
@@ -473,14 +473,14 @@ li#doublead:hover {
 
 .searchbox {
     height: 44px;
-    background: -webkit-gradient(linear,0% 0%,0% 100%,from(#f1f3f4),color-stop(3%,#e0e4e7),color-stop(50%,#c7cfd4),color-stop(51%,#bec7cd),color-stop(97%,#b4bec6),to(#8999a5));
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#878787), color-stop(50%, #4f4f4f), color-stop(51%, #404040), color-stop(95%, #343331));
     margin: -13px 0 13px 0;
     width: 100%
 }
 
 .searchbox form {
     height: 24px;
-    -webkit-border-image: url('../images/searchfield.png') 4 14 1 24;
+    -webkit-border-image: url('https://u5er-96.github.io/market/images/searchfield.png') 4 14 1 24;
     border-width: 4px 14px 1px 24px;
     display: block;
     position: relative;
@@ -619,7 +619,7 @@ fieldset {
     right: 10px;
     top: 15px;
     margin: 0!important;
-    background: url("../images/arrow.png") 0 0 no-repeat
+    background: url("https://u5er-96.github.io/market/images/arrow.png") 0 0 no-repeat
 }
 
 .applist .arrow {
@@ -629,7 +629,7 @@ fieldset {
     right: 10px;
     top: 29px;
     margin: 0!important;
-    background: url("../images/arrow.png") 0 0 no-repeat
+    background: url("https://u5er-96.github.io/market/images/arrow.png") 0 0 no-repeat
 }
 
 .store {
@@ -749,27 +749,27 @@ li:last-child.store .image,.store:last-child a {
 }
 
 .store .stars0 {
-    background: url('../images/0starsborder.png')
+    background: url('https://u5er-96.github.io/market/images/0starsborder.png')
 }
 
 .store .stars1 {
-    background: url('../images/1starsborder.png')
+    background: url('https://u5er-96.github.io/market/images/1starsborder.png')
 }
 
 .store .stars2 {
-    background: url('../images/2starsborder.png')
+    background: url('https://u5er-96.github.io/market/images/2starsborder.png')
 }
 
 .store .stars3 {
-    background: url('../images/3starsborder.png')
+    background: url('https://u5er-96.github.io/market/images/3starsborder.png')
 }
 
 .store .stars4 {
-    background: url('../images/4starsborder.png')
+    background: url('https://u5er-96.github.io/market/images/4starsborder.png')
 }
 
 .store .stars5,.applist .stars5 {
-    background: url('../images/5stars.png')
+    background: url('https://u5er-96.github.io/market/images/5stars.png')
 }
 
 .applist .stars0,.applist .stars1,.applist .stars2,.applist .stars3,.applist .stars4,.applist .stars5 {
@@ -782,23 +782,23 @@ li:last-child.store .image,.store:last-child a {
 }
 
 .applist .stars0 {
-    background: url('../images/0stars.png')
+    background: url('https://u5er-96.github.io/market/images/0stars.png')
 }
 
 .applist .stars1 {
-    background: url('../images/1stars.png')
+    background: url('https://u5er-96.github.io/market/images/1stars.png')
 }
 
 .applist .stars2 {
-    background: url('../images/2stars.png')
+    background: url('https://u5er-96.github.io/market/images/2stars.png')
 }
 
 .applist .stars3 {
-    background: url('../images/3stars.png')
+    background: url('https://u5er-96.github.io/market/images/3stars.png')
 }
 
 .applist .stars4 {
-    background: url('../images/4stars.png')
+    background: url('https://u5er-96.github.io/market/images/4stars.png')
 }
 
 .applist .starcomment {
@@ -988,11 +988,11 @@ li:last-child.store .image,.store:last-child a {
 }
 
 .ipodlist .play {
-    background: url('../images/play.gif') no-repeat
+    background: url('https://u5er-96.github.io/market/images/play.gif') no-repeat
 }
 
 .ipodlist a:hover .auto,.ipodlist a:hover .play {
-    background: url('../images/play.gif') no-repeat;
+    background: url('https://u5er-96.github.io/market/images/play.gif') no-repeat;
     background-position: 0 -10px
 }
 
@@ -1139,28 +1139,28 @@ li:last-child.store .image,.store:last-child a {
 }
 
 .black #leftnav a:first-child,.transparent #leftnav a:first-child {
-    -webkit-border-image: url("../images/navleftblack.png") 0 5 0 13
+    -webkit-border-image: url("https://u5er-96.github.io/market/images/navleftblack.png") 0 5 0 13
 }
 
 .black #leftnav a,.transparent #leftnav a {
-    -webkit-border-image: url("../images/navlinkleftblack.png") 0 5 0 13
+    -webkit-border-image: url("https://u5er-96.github.io/market/images/navlinkleftblack.png") 0 5 0 13
 }
 
 .black #rightnav a:first-child,.transparent #rightnav a:first-child {
-    -webkit-border-image: url("../images/navrightblack.png") 0 13 0 5
+    -webkit-border-image: url("https://u5er-96.github.io/market/images/navrightblack.png") 0 13 0 5
 }
 
 .black #rightnav a,.transparent #rightnav a {
-    -webkit-border-image: url("../images/navlinkrightblack.png") 0 13 0 5
+    -webkit-border-image: url("https://u5er-96.github.io/market/images/navlinkrightblack.png") 0 13 0 5
 }
 
 .black #leftbutton a,.black #rightbutton a,.transparent #leftbutton a,.transparent #rightbutton a {
-    -webkit-border-image: url("../images/navbuttonblack.png") 0 5 0 5
+    -webkit-border-image: url("https://u5er-96.github.io/market/images/navbuttonblack.png") 0 5 0 5
 }
 
 #leftnav a:first-child {
     z-index: 2;
-    -webkit-border-image: url("../images/navleft.png") 0 5 0 13;
+    -webkit-border-image: url("https://u5er-96.github.io/market/images/navleft.png") 0 5 0 13;
     border-width: 0 5px 0 13px;
     -webkit-border-top-left-radius: 16px;
     -webkit-border-bottom-left-radius: 16px;
@@ -1170,7 +1170,7 @@ li:last-child.store .image,.store:last-child a {
 }
 
 #leftnav a {
-    -webkit-border-image: url("../images/navlinkleft.png") 0 5 0 13;
+    -webkit-border-image: url("https://u5er-96.github.io/market/images/navlinkleft.png") 0 5 0 13;
     z-index: 3;
     margin-left: -4px;
     border-width: 0 5px 0 13px;
@@ -1190,7 +1190,7 @@ li:last-child.store .image,.store:last-child a {
 }
 
 #rightnav a {
-    -webkit-border-image: url("../images/navlinkright.png") 0 13 0 5;
+    -webkit-border-image: url("https://u5er-96.github.io/market/images/navlinkright.png") 0 13 0 5;
     z-index: 3;
     margin-right: -4px;
     border-width: 0 13px 0 5px;
@@ -1206,20 +1206,20 @@ li:last-child.store .image,.store:last-child a {
     z-index: 2;
     -webkit-border-top-left-radius: 6px;
     -webkit-border-bottom-left-radius: 6px;
-    -webkit-border-image: url("../images/navright.png") 0 13 0 5;
+    -webkit-border-image: url("https://u5er-96.github.io/market/images/navright.png") 0 13 0 5;
     border-width: 0 13px 0 5px;
     -webkit-border-top-right-radius: 16px;
     -webkit-border-bottom-right-radius: 16px
 }
 
 #leftbutton a,#rightbutton a {
-    -webkit-border-image: url("../images/navbutton.png") 0 5 0 5;
+    -webkit-border-image: url("https://u5er-96.github.io/market/images/navbutton.png") 0 5 0 5;
     border-width: 0 5px;
     -webkit-border-radius: 6px
 }
 
 #blueleftbutton a,#bluerightbutton a {
-    -webkit-border-image: url("../images/navbuttonblue.png") 0 5 0 5;
+    -webkit-border-image: url("https://u5er-96.github.io/market/images/navbuttonblue.png") 0 5 0 5;
     border-width: 0 5px;
     -webkit-border-radius: 6px
 }
@@ -1227,7 +1227,7 @@ li:last-child.store .image,.store:last-child a {
 input[type="checkbox"] {
     width: 94px;
     height: 27px;
-    background: url('../images/checkbox.png');
+    background: url('https://u5er-96.github.io/market/images/checkbox.png');
     -webkit-appearance: none;
     border: 0;
     float: right;
@@ -1251,7 +1251,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-    background: url('../images/radiobutton.png') no-repeat;
+    background: url('https://u5er-96.github.io/market/images/radiobutton.png') no-repeat;
     background-position: right center
 }
 
@@ -1278,7 +1278,7 @@ select {
 }
 
 .select .arrow {
-    background: url('../images/arrow.png');
+    background: url('https://u5er-96.github.io/market/images/arrow.png');
     width: 8px;
     height: 13px;
     display: block;
