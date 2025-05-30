@@ -1355,3 +1355,9 @@ select {
 .smallfield:last-child input {
     -webkit-border-bottom-right-radius: 8px
 }
+
+.Fixed
+{
+    position: fixed;
+    top: 44px;
+}
