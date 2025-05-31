@@ -264,18 +264,20 @@ a:hover .arrow {
 }
 
 #topbar {
-    position: relative;
+    position: sticky;
     left: 0;
     top: 0;
+	z-index: 1000;
     width: auto;
     background: -webkit-gradient(linear,0% 0%,0% 100%,from(#cdd5df),color-stop(3%,#b0bccd),color-stop(50%,#889bb3),color-stop(51%,#8195af),color-stop(97%,#6d84a2),to(#2d3642));
     margin-bottom: 13px
 }
 
 #title {
-    position: absolute;
+    position: sticky;
     font-weight: bold;
     top: 0;
+	z-index: 1000;
     left: 0;
     right: 0;
     padding: 0 10px;
