@@ -177,7 +177,7 @@ a:hover .arrow {
     }
 
     #rightnav,#rightbutton,#bluerightbutton {
-        top: 4px
+        top: 4px;
     }
 
     .musiclist .name {
@@ -1504,6 +1504,6 @@ select {
     position: absolute;
     font-size: 12px;
     left: 9px;
-    top: 7px;
+    top: 4px;
     font-weight: bold
 }
