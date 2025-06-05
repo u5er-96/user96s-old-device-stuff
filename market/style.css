@@ -1349,20 +1349,3 @@ select {
     font-weight: bold;
     font-size: 17px
 }
-
-.smallfield:first-child input {
-    -webkit-border-top-right-radius: 8px
-}
-
-.smallfield:last-child input {
-    -webkit-border-bottom-right-radius: 8px
-}
-
-.confirm_screen {
-    position: absolute;
-    bottom: 0;
-    -webkit-transform: translate(0,100%);
-    -webkit-transition-property: -webkit-transform;
-    background-image: url("https://u5er-96.github.io/market/images/popup-bg.png");
-    opacity: 0
-}
