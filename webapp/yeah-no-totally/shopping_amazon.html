@@ -1,0 +1,41 @@
+<form action="http://www.amazon.com/s/" method="get" name="amazon" target="_blank" class="panel" id="amazon" selected="true">
+<h2><a href="http://www.amazon.com" target="_blank">AMAZON</a></h2>
+<select name="url">
+<option value="search-alias=aps" selected="selected">Amazon.com</option>
+<option value="search-alias=apparel">Apparel</option>
+<option value="search-alias=automotive">Automotive</option>
+<option value="search-alias=baby-products">Baby</option>
+<option value="search-alias=beauty">Beauty</option>
+<option value="search-alias=stripbooks">Books</option>
+<option value="search-alias=wireless-phones">Cell Phones</option>
+<option value="search-alias=dvd">DVD</option>
+<option value="search-alias=electronics">Electronics</option>
+<option value="search-alias=gourmet">Gourmet Food</option>
+<option value="search-alias=grocery">Grocery</option>
+<option value="search-alias=hpc">Health &amp; Personal Care</option>
+<option value="search-alias=garden">Home &amp; Garden</option>
+<option value="search-alias=tools">Home Improvement</option>
+<option value="search-alias=industrial">Industrial &amp; Scientific</option>
+<option value="search-alias=jewelry">Jewelry &amp; Watches</option>
+<option value="search-alias=magazines">Magazines</option>
+<option value="search-alias=popular">Music</option>
+<option value="search-alias=mi">Musical Instruments</option>
+<option value="search-alias=office-products">Office Products</option>
+<option value="search-alias=software">Software</option>
+<option value="search-alias=sporting">Sports &amp; Outdoors</option>
+<option value="search-alias=toys-and-games">Toys &amp; Games</option>
+<option value="search-alias=amazontv">Unbox Video Downloads</option>
+<option value="search-alias=vhs">VHS</option>
+<option value="search-alias=videogames">Video Games</option>
+<option value="search-alias=wireless-accessories">Wireless Accessories</option>
+<option value="search-alias=wireless-plans">Wireless Plans</option>
+<option value="search-alias=misc">Everything Else</option>
+</select>
+<input type="hidden" name="initialSearch" value="1"/>
+<input type="search" name="field-keywords" placeholder="the goods" value="" style="margin-bottom:10px;" />
+<div class="checkboxGroup" style="width:60px; margin-left:2px;"> <input name="ctoggle" type="radio" class="inputCheckbox" onclick="document.amazon.action = 'http://www.amazon.com/s/';" value="" checked="checked" /> US</div>
+<div class="checkboxGroup" style="width:60px;"> <input name="ctoggle" type="radio" class="inputCheckbox" onclick="document.amazon.action = 'http://www.amazon.co.uk/s/';" value="" /> UK</div>
+<div class="checkboxGroup" style="width:60px;"> <input name="ctoggle" type="radio" class="inputCheckbox" onclick="document.amazon.action = 'http://www.amazon.de/s/';" value="" /> DE</div>
+<div class="checkboxGroup" style="width:60px;"> <input name="ctoggle" type="radio" class="inputCheckbox" onclick="document.amazon.action = 'http://www.amazon.fr/s/';" value="" /> FR</div>
+<input type="submit" value="search" class="searchButton" />
+</form>

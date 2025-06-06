@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Description" content="Jump start your web searches to many popular sites, all from one quick startpage. 'Yeah. No, Totally.' helps you rapidly find content from sites such as Google, Wikipedia, Yelp, eBay, Amazon, Craigslist and Flickr. It also includes links to tools such as currency and unit conversion, cinema listings, sports scores, tipping calculators, transportation schedules, traffic reports and SF Bay Area Webcams." />
+<meta name="Keywords" content="iphone, search, apple, personal startpage, start page, webcam, search engines, music, mp3, widgets, movies, internet, download, artists, links, muni, bart, caltrain" />
+<meta name="copyright" content="Copyright (C) 2007 yeahnototally.com" />
+<meta name="resource-type" content="document" />
+<meta name="revisit-after" content="7 days" />
+<meta name="rating" content="general" />
+<meta name="robots" content="all" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<title>Totally.</title>
+<style type="text/css" media="screen">
+@import url(iui/iui.css);
+@import url(iphonecss.css);
+</style>
+<!-- Thanks to Joe Hewitt for developing the iUI interface library - http://code.google.com/p/iui/ -->
+<script type="application/x-javascript" src="iui/iui.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33644214-2', 'yeahnototally.com');
+  ga('send', 'pageview');
+</script>
+<script type="application/javascript" src="cookies.js"></script>
+<script type="text/javascript">
+// <!--
+function loadCookie() {
+document.upcoming.loc.value = decode(readCookie("ynt_upcoming"));
+document.yelp.find_loc.value = decode(readCookie("ynt_yelp"));
+}
+function toggleTime() {
+document.transit511.tm.value = ( document.transit511.tm.value == "L" ) ? "A" : "L";
+}
+function toggleAMPM() {
+document.transit511.am1.value = ( document.transit511.am1.value == "am" ) ? "pm" : "am";
+}
+function clSetLocation() {
+var Index = document.cl.area.selectedIndex;
+document.cl.action = "http://" + document.cl.area.options[Index].value + ".craigslist.org/search";
+}
+
+//-->
+</script>
+<!--[if lt IE 7]>
+<script defer type="text/javascript" src="../pngfix.js"></script>
+<![endif]-->
+</head>
+<body onload="loadCookie();">
+<div class="toolbar">
+<h1 id="pageTitle"></h1>
+<a id="backButton" class="button" href="#" onclick="document.getElementById('aboutbutton').style.visibility='visible';"></a> <a class="button" href="#about" id="aboutbutton" onclick="document.getElementById('aboutbutton').style.visibility='hidden';">About</a></div>
+<!-- 
+MAIN 
+-->
+<ul id="home" title="Totally." selected="true">
+<li><a href="#internet_searches">Internet</a></li>
+<li><a href="#events">Events / Entertainment</a></li>
+<li><a href="#shopping">Shopping</a></li>
+<li><a href="#finance">Finance</a></li>
+<li><a href="#news">News</a></li>
+<li><a href="imagesearch.html">Images</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="webcam.html" target="_blank">SF Bay Area Webcams &raquo;</a></li>
+<li><div id="bestviewed_msg"></div></li>
+</ul>
+<script type="text/javascript">
+if (navigator.userAgent.indexOf("iPhone") < 0) { document.getElementById("bestviewed_msg").innerHTML = "Best viewed with <a href='http://www.apple.com/iphone/' target='_top'>iPhone</a>, <a href='http://www.apple.com/safari/' target='_top'>Safari 3</a>, or <a href='http://www.firefox.com' target='_top'>Firefox</a>.";}
+</script>
+<!--
+INTERNET
+-->
+<ul id="internet_searches" title="Internet">
+<li><a href="#internet_google">Google Search</a></li>
+<li><a href="http://us.m.yahoo.com/" target="_blank">Yahoo &raquo;</a></li>
+<li><a href="#internet_wiki">Wikipedia</a></li>
+<li><a href="#internet_techno">Technorati</a></li>
+<li><a href="#internet_mw">Merriam-Webster Online</a></li>
+<li><a href="#internet_myspace">MySpace</a></li>
+</ul>
+<!--
+EVENTS
+-->
+<ul id="events" title="Events / Ent.">
+<li class="group">Events</li>
+<li><a href="#events_upcoming">Upcoming.org</a></li>
+<li class="group">Sports</li>
+<li><a href="http://iphone.thescore.com/mlb" target="_blank">ScoreMobile &raquo;</a></li>
+<li class="group">Dining</li>
+<li><a href="#events_yelp">Yelp</a></li>
+<li><a href="http://www.nirvino.com/iphone/" target="_blank">Nirvino <span style="font-size:13px;">(wine reviews)</span> &raquo;</a></li>
+<li class="group">Movies</li>
+<li><a href="http://themacbox.co.uk/iphone/cinema/" target="_blank">Cinema Listings &raquo;</a></li>
+<li><a href="feed://i.rottentomatoes.com/syndication/rss/complete_movies.xml" target="_blank">Rotten Tomatoes <span style="font-size:13px;">Top Movies</span> <div class="icon_rss"></div></a></li>
+<li><a href="#events_imdb">IMDB</a></li>
+<li class="group">TV</li>
+<li><a href="http://www.bigbucketblog.com/webtv/" target="_blank">TV Forecast &raquo;</a></li>
+<li class="group">Music</li>
+<li><a href="http://iphone.sonicliving.com/" target="_blank">SonicLiving &raquo;</a></li>
+<li><a href="events_pollstar.html">Pollstar</a></li>
+<li class="group">Music Research</li>
+<li><a href="#music_discogs">Discogs</a></li>
+<li><a href="music_allmusic.html">AllMusic</a></li>
+<li><a href="music_artistdirect.html">Artist Direct</a></li>
+<li><a href="music_gracenote.html">Gracenote</a></li>
+<li><a href="http://www.seeqpod.com/iphone" target="_blank">SeeqPod &raquo;</a></li>
+</ul>
+<!--
+SHOPPING
+-->
+<ul id="shopping" title="Shopping">
+<li class="group">Online Shopping</li>
+<li><a href="shopping_craigslist.html">Craigslist</a></li>
+<li><a href="#shopping_ebay">eBay</a></li>
+<li><a href="shopping_amazon.html">Amazon</a></li>
+<li class="group">Price Comparison</li>
+<li><a href="http://www.prixtag.com/" target="_blank">Prixtag &raquo;</a></li>
+<li><a href="#shopping_pricegrabber">PriceGrabber</a></li>
+<li><a href="http://www.isave.com/" target="_blank">iSave &raquo;</a></li>
+<li class="group">Other</li>
+<li><a href="http://onetrip.org/onetrip/" target="_blank">OneTrip &raquo;</a></li>
+<li><a href="http://www.sixteenseven.com/tracktapp/" target="_blank">Package Tracking &raquo;</a></li>
+<li><a href="http://www.bkmcm.com/PriceCalc/" target="_blank">Unit Price Calculator &raquo;</a></li>
+</ul>
+<!--
+FINANCE
+-->
+<ul id="finance" title="Finance">
+<li><a href="#finance_google">Google Finance</a></li>
+<li><a href="finance_currencyconv.html">Currency Conversion</a></li>
+<li><a href="http://www.sixteenseven.com/tiptapp/?amt=&tip=20&rnd=4" target="_blank">tipTapp Tip Calculator &raquo;</a></li>
+</ul>
+<!--
+NEWS
+-->
+<ul id="news" title="News">
+<li><a href="feed://rss.cnn.com/rss/cnn_topstories.rss" target="_blank">CNN <div class="icon_rss"></div></a></li>
+<li><a href="feed://graphics8.nytimes.com/services/xml/rss/nyt/HomePage.xml" target="_blank">New York Times <div class="icon_rss"></div></a></li>
+<li><a href="feed://newsrss.bbc.co.uk/rss/newsonline_world_edition/front_page/rss.xml" target="_blank">BBC News <div class="icon_rss"></div></a></li>
+<li><a href="feed://news.google.com/nwshp?tab=wn&output=atom" target="_blank">Google News <div class="icon_rss"></div></a></li>
+<li class="group">Technology</li>
+<li><a href="http://digg.com/iphone" target="_blank">Digg &raquo;</a></li>
+<li><a href="feed://www.engadget.com/rss.xml" target="_blank">Engadget <div class="icon_rss"></div></a></li>
+<li><a href="feed://feeds.theonion.com/theonion/daily" target="_blank">The Onion <div class="icon_rss"></div></a></li>
+</ul>
+<!--
+TOOLS
+-->
+<ul id="tools" title="Tools">
+<li class="group">Transportation</li>
+<li><a href="http://sf.munitime.com/" target="_blank">SanFran MuniTime &raquo;</a></li>
+<li><a href="tools_sfbart.html">SanFran BARTsmart</a></li>
+<li><a href="http://icaltrain.com/iphone.php" target="_blank">SanFran iCaltrain &raquo;</a></li>
+<li><a href="tools_sftripplanner.html">SanFran 511 Trip Planner</a></li>
+<li><a href="http://traffic.dynadel.com/" target="_blank">US Traffic &raquo;</a></li>
+<li><a href="http://iapps.co.uk/traffic/" target="_blank">UK Traffic &raquo;</a></li>
+<li><a href="http://themacbox.co.uk/iphone/trains/" target="_blank">UK Trains &raquo;</a></li>
+<li class="group">Instant Messaging / Social</li>
+<li><a href="http://iphone.beejive.com/" target="_blank">JiveTalk &raquo;</a></li>
+<li><a href="http://flickim.com/" target="_blank">FlickIM &raquo;</a></li>
+<li><a href="http://m.twitter.com/" target="_blank">Twitter &raquo;</a></li>
+<li class="group">Network</li>
+<li><a href="http://iphone.jiwire.com/" target="_blank">JiWire Wi-Fi Finder &raquo;</a></li>
+<li><a href="http://www.iphonenetworktest.com/" target="_blank" style="font-size:19px;">iPhone Network Speed Test &raquo;</a></li>
+<li class="group">Other</li>
+<li><a href="http://meatarian.co.uk/iphone/iconvert/" target="_blank">Unit Converter &raquo;</a></li>
+<li><a href="http://www.sullr.com/" target="_blank">Reverse Phone Lookup &raquo;</a></li>
+</ul>
+<!--
+ABOUT
+-->
+<div class="panel_about" id="about" title="About" align="center">
+<div style="padding-top:40px;"><img src="../images/yeahnototally.png" border="0" /></div>
+<div align="left" id="about_detail">
+<p>Based on a series of short developments by members of the Silicon Valley Cooperative, <nobr>Yeah No Totally</nobr> may or may not leverage synergistic communities by aggregating web-enabled consumer infomediaries.</p>
+<p>This service has not been certified for use with non-Apple products.</p>
+<p style="font-size:10px; font-weight:bold;">Warning: The validity or superior usefulness of search results or links provided can only be ascertained by the visitors of the aforementioned web site, and not predetermined by members of the Cooperative. For private personal use only, internet law provides severe civil and subliminal penalties for the unauthorized distribution of copyrighted knowledge and patented schematics.</p>
+<p align="center"><a href="mailto:search@yeahnototally.com?subject=Yeah. No, Totally." target="_self">search@yeahnototally.com</a></p>
+</div>
+</div>
+<!--
+GOOGLE
+-->
+<div class="panel" id="internet_google" title="Google Search">
+<form action="http://www.google.com/search" name="google" id="google" class="panel" selected="true" method="get" target="_blank">
+<h2><a href="http://www.google.com" target="_blank">GOOGLE</a></h2>
+<input name="q" type="search" value="" size="" placeholder="google search" style="margin-bottom:10px;" />
+<div id="internet_google_options">
+<div class="checkboxGroup"> <input name="tab" type="radio" class="inputCheckbox" onclick="document.google.action = 'http://www.google.com/search';" value="iw" checked="checked" /> web</div>
+<div class="checkboxGroup"> <input name="tab" type="radio" class="inputCheckbox" onclick="document.google.action = 'http://images.google.com/images';" value="wi" /> images</div>
+<div class="checkboxGroup"> <input name="tab" type="radio" class="inputCheckbox" onclick="document.google.action = 'http://video.google.com/videosearch';" value="" /> video</div>
+<div class="checkboxGroup"> <input name="tab" type="radio" class="inputCheckbox" onclick="document.google.action = 'http://www.google.com/groups';" value="wg" /> groups</div>
+<div class="checkboxGroup"> <input name="tab" type="radio" class="inputCheckbox" onclick="document.google.action = 'http://www.google.com/search';document.google.cat.value = 'gwd/Top';" value="wd" /> directory</div>
+<div class="checkboxGroup"> <input name="tab" type="radio" class="inputCheckbox" onclick="document.google.action = 'http://www.google.com/news';" value="wn" /> news</div>
+<div class="checkboxGroup"> <input name="tab" type="radio" class="inputCheckbox" onclick="document.google.action = 'http://www.google.com/archivesearch'; document.google.scoring.value = 't';" value="wn" /> news archives</div>
+<div class="checkboxGroup"> <input name="tab" type="radio" class="inputCheckbox" onclick="document.google.action = 'http://blogsearch.google.com/blogsearch';" value="" /> blogs</div>
+<div class="checkboxGroup"> <input name="tab" type="radio" class="inputCheckbox" onclick="document.google.action = 'http://catalogs.google.com/catalogs';" value="" /> catalogs</div>
+<div class="checkboxGroup"> <input name="tab" type="radio" class="inputCheckbox" onclick="document.google.action = 'http://froogle.google.com/froogle';" value="" /> froogle</div>
+<div class="checkboxGroup"> <input name="tab" type="radio" class="inputCheckbox" onclick="document.google.action = 'http://www.google.com/patents';" value="" /> patents</div>
+</div>
+<input type="hidden" name="hl3" value="en" /> <input type="hidden" name="cat" value="" /> <input type="hidden" name="lr" value="lang_en" /> <input type="hidden" name="ie" value="UTF-8" /> <input type="hidden" name="oe" value="UTF-8" /> <input type="hidden" name="as_qdr" value="all" /> <input type="hidden" name="sa" value="N" /> <input type="hidden" name="scoring" value="" /> <input type="hidden" name="cd" value="1" /> <input type="submit" value="search" class="searchButton" />
+</form>
+<br />
+<br />
+<hr size="1" color="#999999" />
+<table width="100%" border="0" cellpadding="10">
+<tr>
+<td align="center"><a href="http://www.google.com/language_tools" target="blank">translate</a></td>
+<td align="center"><a href="http://www.google.com/trends/hottrends" target="blank">hot trends</a></td>
+</tr>
+</table>
+<br />
+</div>
+<!--
+WIKIPEDIA
+-->
+<div class="panel" id="internet_wiki" title="Wikipedia">
+<form action="http://en.wikipedia.org/wiki/Special:Search" method="get" id="searchform" class="panel" selected="true" target="_blank">
+<h2><a href="http://www.wikipedia.org" target="_blank">WIKIPEDIA</a></h2>
+<input type="search" name="search" id="searchInput" placeholder="research everything" /> <input type="submit" value="search" class="searchButton" />
+</form>
+</div>
+<!--
+TECHNORATI
+-->
+<div class="panel" id="internet_techno" title="Technorati">
+<form id="techno_search" action="http://search.technorati.com/search.php" method="post" class="panel" selected="true" target="_blank">
+<h2><a href="http://www.technorati.com" target="_blank">TECHNORATI</a></h2>
+<select id="authority" name="authority">
+<option value="">any</option>
+<option value="a1">a little</option>
+<option value="a4" selected="selected">some authority</option>
+<option value="a7">a lot</option>
+</select>
+<input type="hidden" name="language" value="en" /> <input id="q" name="q" type="search" placeholder="search blogs" /><input type="submit" value="search" class="searchButton" />
+</form>
+</div>
+<!--
+MW ONLINE
+-->
+<div class="panel" id="internet_mw" title="M-W Online">
+<form action="http://www.m-w.com/cgi-bin/dictionary" method="get" name="mw" id="mw" class="panel" selected="true" target="_blank">
+<h2><a href="http://www.m-w.com" target="_blank">M-W ONLINE</a></h2>
+<input type="search" name="va" placeholder="word lookup" /> <input type="hidden" name="sourceid" value="Mozilla-search" />
+<div class="checkboxGroup" style="width:130px;"> <input name="book" type="radio" class="inputCheckbox" onclick="document.mw.action = 'http://www.m-w.com/cgi-bin/dictionary';" value="Dictionary" checked="checked" /> dictionary</div>
+<div class="checkboxGroup" style="width:130px;"> <input name="book" type="radio" class="inputCheckbox" onclick="document.mw.action = 'http://www.m-w.com/cgi-bin/thesaurus';" value="Thesaurus" /> thesaurus</div>
+<div class="checkboxGroup" style="width:150px;"> <input name="book" type="radio" class="inputCheckbox" onclick="document.mw.action = 'http://www.m-w.com/cgi-bin/spanish';" value="Spanish" /> spanish-english</div>
+<input type="submit" value="search" style="clear:both;" class="searchButton" />
+</form>
+</div>
+<!--
+MYSPACE
+-->
+<div class="panel" id="internet_myspace" title="MySpace">
+<form action="http://sads.myspace.com//Modules/Search/Pages/Search.aspx" method="get" name="myspace" id="myspace" class="panel" selected="true" target="_blank">
+<h2><a href="http://www.myspace.com" target="_blank">MYSPACE</a></h2>
+<input type="search" name="q" placeholder="site search" /> <input type="hidden" name="fuseaction" value="advancedFind.results" /> <input type="hidden" name="searchtarget" value="tms" /> <input type="hidden" name="searchtype" value="myspace" /> <input type="hidden" name="t" value="tms" /> <input type="hidden" name="get" value="1" /> <input type="hidden" name="websearch" value="1" /> <input type="hidden" name="searchBoxID" value="HeaderWebResults" />
+<input type="submit" value="search" style="clear:both;" class="searchButton" />
+</form>
+</div>
+<!--
+UPCOMING
+-->
+<div class="panel" id="events_upcoming" title="Upcoming.org">
+<form action="http://upcoming.yahoo.com/search/" method="get" target="_blank" class="panel" name="upcoming" id="upcoming" selected="true" onsubmit="createCookie('ynt_upcoming', encode(document.upcoming.loc.value), 30);">
+<h2><a href="http://upcoming.yahoo.com" target="_blank">UPCOMING.ORG</a></h2>
+<select name="category_id" size="1" >
+<option value="">all</option>
+<option value="1">music</option>
+<option value="4">social</option>
+<option value="5">education</option>
+<option value="2">performing/visual arts</option>
+<option value="6">commercial</option>
+<option value="7">festivals</option>
+<option value="3">media</option>
+<option value="8">sports</option>
+<option value="11">comedy</option>
+<option value="12">politics</option>
+<option value="13">family</option>
+<option value="10">other</option>
+</select>
+<input name="loc" type="search" placeholder="near where" value="" /> <input type="submit" value="search" class="searchButton" />
+</form>
+</div>
+<!--
+YELP
+-->
+<div class="panel" id="events_yelp" title="Yelp">
+<form action="http://www.yelp.com/search" method="get" target="_blank" class="panel" name="yelp" id="yelp" selected="true" onsubmit="createCookie('ynt_yelp', encode(document.yelp.find_loc.value), 30);">
+<h2><a href="http://www.yelp.com" target="_blank">YELP</a></h2>
+<input type="search" name="find_desc" placeholder="search for (e.g. taco, salon, max's)" /> <input type="search" name="find_loc" placeholder="near (address, city &amp; state or zip)" /> <input type="hidden" name="ns" value="1" /> <input type="hidden" name="rpp" value="10" /> <input type="submit" value="search" class="searchButton" />
+</form>
+</div>
+<!--
+IMDB
+-->
+<div class="panel" id="events_imdb" title="IMDB">
+<form method="get" action="http://www.imdb.com/find" target="_blank" class="panel" selected="true">
+<h2><a href="http://www.imdb.com" target="_blank">IMDB</a></h2>
+<select name="s">
+<option value="all" selected>All</option>
+<option value="tt">Titles</option>
+<option value="ep">TV Episodes</option>
+<option>My Movies</option>
+<option value="nm">Names</option>
+<option value="co">Companies</option>
+<option value="kw">Keywords</option>
+<option>Characters</option>
+<option>Quotes</option>
+<option>Bios</option>
+<option>Plots</option>
+</select>
+<input name="q" placeholder="search movie info" type="search" /> <input type="submit" id="" value="search" class="searchButton" />
+</form>
+</div>
+<!--
+DISCOGS
+-->
+<div class="panel" id="music_discogs" title="Discogs">
+<form action="http://www.discogs.com/search/" method="get" class="panel" selected="true" target="_blank">
+<h2><a href="http://www.discogs.com/search" target="_blank">DISCOGS</a></h2>
+<input type="search" name="q" value="" placeholder="research artist" /> <input type="hidden" name="type" value="artists" /> <input type="submit" value="search" class="searchButton" />
+</form>
+</div>
+<!--
+EBAY
+-->
+<div class="panel" id="shopping_ebay" title="eBay">
+<form action="http://search.ebay.com/ws/search/SaleSearch" method="get" target="_blank" class="panel" id="ebay" name="ebay" selected="true">
+<input type="hidden" name="sofocus" value="bs" />
+<h2><a href="http://www.ebay.com" target="_blank">EBAY</a></h2>
+<input type="search" id="satitle" name="satitle" value="" maxlength="300" placeholder="the goods" style="margin-bottom:10px;" /> <input type="hidden" name="sacat" value="-1&amp;catref=C5" /> <input type="hidden" id="from" name="from" value="R7"/> <input type="hidden" id="nojspr" name="nojspr" value="y"/> <input type="hidden" id="pfid" name="pfid" value="0"/> <input name="fts" type="hidden" value="2"/>
+<div class="checkboxGroup" style="width:60px; margin-left:2px;"> <input name="ctoggle" type="radio" class="inputCheckbox" onclick="document.ebay.action = 'http://search.ebay.com/ws/search/SaleSearch';" value="" checked="checked" /> US</div>
+<div class="checkboxGroup" style="width:60px;"> <input name="ctoggle" type="radio" class="inputCheckbox" onclick="document.ebay.action = 'http://search.ebay.co.uk/ws/search/SaleSearch';" value="" /> UK</div>
+<div class="checkboxGroup" style="width:60px;"> <input name="ctoggle" type="radio" class="inputCheckbox" onclick="document.ebay.action = 'http://search.ebay.de/ws/search/SaleSearch';" value="" /> DE</div>
+<div class="checkboxGroup" style="width:60px;"> <input name="ctoggle" type="radio" class="inputCheckbox" onclick="document.ebay.action = 'http://search.ebay.fr/ws/search/SaleSearch';" value="" /> FR</div>
+<div class="checkboxGroup" style="width:300px; margin-left:2px;"> <input type="checkbox" id="fis" name="fis" value="2" class="inputCheckbox" /> completed auctions (sign-in required)</div>
+<input type="hidden" name="fsop" value="1&amp;fsoo=1" /> <input type="hidden" name="fcl" value="3" /> <input type="hidden" name="frpp" value="100" /> <input type="submit" value="search" class="searchButton" />
+</form>
+</div>
+<!--
+PRICEGRABBER
+-->
+<div class="panel" id="shopping_pricegrabber" title="PriceGrabber">
+<form action="http://www.pricegrabber.com/search_gen.php" method="get" id="f" class="panel" selected="true" target="_blank">
+<h2><a href="http://www.pricegrabber.com" target="_blank">PRICEGRABBER</a></h2>
+<input type="hidden" name="topcat_search" value="1" /> <input type="search" name="form_keyword" size="25" placeholder="find low prices" /> <input type="submit" value="search" class="searchButton" />
+</form>
+<br />
+<div align="center"><a href="http://www.resellerratings.com" target="_blank">resellerratings.com</a></div>
+</div>
+<!--
+GOOGLE FINANCE
+-->
+<div class="panel" id="finance_google" title="Google Finance">
+<form action="http://finance.google.com/finance" method="get" id="googlefinance" class="panel" selected="true" target="_blank" >
+<h2><a href="http://finance.google.com" target="_blank">GOOGLE FINANCE</a></h2>
+<input type="hidden" name="hl" value="en" /> <input name="q" type="search" placeholder="symbol/name" id="q" /> <input type="submit" value="search" class="searchButton" />
+</form>
+</div>
+<!--
+PRELOAD
+-->
+<img src="images/listGroup.png" alt="" class="hiddenPic" /><img src="images/listRSS.png" alt="" class="hiddenPic" />
+</body>
+</html>

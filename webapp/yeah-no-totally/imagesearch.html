@@ -1,0 +1,56 @@
+<!--
+IMAGES
+-->
+<ul id="imagesearch" title="Images">
+	<li><a href="#imagesearch_flickr">Flickr</a></li>
+	<li><a href="http://www.chandlerkent.com/iphlickr/" target="_blank">iPhlickr &raquo;</a></li>
+	<li><a href="#imagesearch_zooomr">Zooomr</a></li>
+	<li><a href="#imagesearch_google">Google Images</a></li>
+	<li><a href="#imagesearch_istock">iStockPhoto</a></li>
+	<li><a href="#imagesearch_stockxchng">Stock X.Chng</a></li>
+</ul>
+<!--
+FLICKR
+-->
+<div class="panel" id="imagesearch_flickr" title="Flickr">
+	<form action="http://flickr.com/search/" method="get" class="panel" selected="true" target="_blank">
+		<h2><a href="http://flickr.com/explore/interesting/7days/" target="_blank">FLICKR INTERESTINGNESS</a></h2>
+		<input type="search" name="q" id="q" placeholder="search flickr" /> <input type="hidden" name="s" value="int" /> <input type="submit" value="search" class="searchButton" />
+	</form>
+</div>
+<!--
+ZOOOMR
+-->
+<div class="panel" id="imagesearch_zooomr" title="Zooomr">
+	<form action="http://www.zooomr.com/search/photos/" method="get" class="panel" selected="true" target="_blank">
+		<h2><a href="http://www.zooomr.com/discover/" target="_blank">ZOOOMR</a></h2>
+		<input name="q" type="search" id="q" placeholder="search zooomr"/> <input type="submit" value="search" class="searchButton" />
+	</form>
+</div>
+<!--
+GOOGLE IMAGES
+-->
+<div class="panel" id="imagesearch_google" title="Google Images">
+	<form action="http://images.google.com/images" method="get" class="panel" selected="true" target="_blank">
+		<h2><a href="http://images.google.com" target="_blank">GOOGLE IMAGES</a></h2>
+		<input type="search" name="as_q" value="" placeholder="search google images"/> <input type="hidden" name="hl2" value="en" /> <input type="hidden" name="output" value="images" /> <input type="hidden" name="svnum" value="10" /> <input type="hidden" name="btnG" value="Google+Search" /> <input type="hidden" name="safe" value="off" /> <input type="submit" value="search" class="searchButton" />
+	</form>
+</div>
+<!--
+ISTOCKPHOTO
+-->
+<div class="panel" id="imagesearch_istock" title="iStockPhoto">
+	<form action="http://www.istockphoto.com/file_search.php" method="get" class="panel" selected="true" target="_blank">
+		<h2><a href="http://www.istockphoto.com" target="_blank">iSTOCKPHOTO</a></h2>
+		<input type="hidden" name="action" value="file" /> <input class="name" type="search" name="text" placeholder="search istockphoto" /> <input type="submit" value="search" class="searchButton" />
+	</form>
+</div>
+<!--
+STOCK XCHNG
+-->
+<div class="panel" id="imagesearch_stockxchng" title="Stock X.Chng">
+	<form id="search_form" method="get" action="http://www.sxc.hu/browse.phtml" class="panel" selected="true" target="_blank">
+		<h2><a href="http://www.sxc.hu" target="_blank">STOCK.XCHNG</a></h2>
+		<input type="hidden" name="f" value="search" /> <input type="hidden" name="w" value="1" /> <input name="txt" type="search" placeholder="search stock.xchng" /> <input type="submit" value="search" class="searchButton" />
+	</form>
+</div>
