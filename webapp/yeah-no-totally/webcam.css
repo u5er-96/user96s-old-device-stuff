@@ -1,0 +1,49 @@
+html {
+	font-family: sans-serif;
+}
+
+.cam-image {
+	max-width: 100%;
+	max-height: 50vh;
+}
+
+.wrapper {
+	width: 80%;
+	max-width: 1080px;
+	height: 100%;
+	background: #CCC;
+}
+
+.iframe-block { 
+	position: relative;
+        aspect-ratio: 16 / 9;
+}
+
+.iframe-block .ratio {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.iframe-block iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.height-override {
+	max-height: 75vh;
+}
+
+.cam-block,
+.about,
+.resources {
+	padding-bottom: 2em;
+}
+
+.crop {
+	width: 80%;
+	overflow: hidden;
+}
