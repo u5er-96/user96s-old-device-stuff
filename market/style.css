@@ -667,7 +667,7 @@ fieldset {
     position: absolute;
     top: 7px;
     left: 11px;
-    -webkit-border-radius: 9px;
+    -webkit-border-radius: 11px;
     -webkit-box-shadow: 0 2px 3px rgb(0,0,0);
     background: -webkit-gradient(linear,0% 0%,0% 100%,from(#7c7c7c),color-stop(3%,#858585),color-stop(97%,#a4a4a4),to(#c2c2c2));
     -webkit-background-size: 57px
