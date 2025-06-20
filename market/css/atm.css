@@ -475,11 +475,11 @@ li#doublead:hover {
 
 .searchbox {
     height: 44px;
-	z-index: 1000;
-	position: sticky;
-	top: 0;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
     background: -webkit-gradient(linear,0% 0%,0% 100%,from(rgba(133,133,133,0.7)),color-stop(3%,rgba(99,99,99,0.7)),color-stop(50%,rgba(32,32,32,0.7)),color-stop(51%,rgba(0,0,0,0.7)),color-stop(97%,rgba(0,0,0,0.7)),to(rgba(38,38,38,0.7)));
-    margin: -18px 0 13px 0;
+    margin: -20px 0 13px 0;
     width: 100%
 }
 
