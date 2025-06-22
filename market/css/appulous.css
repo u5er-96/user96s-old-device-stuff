@@ -247,7 +247,7 @@ a:hover .arrow {
     }
 
     .searchbox input[type="text"] {
-        width: 435px
+        width: 310px;
     }
 
     .bigfield input {
@@ -475,7 +475,7 @@ li#doublead:hover {
 
 .searchbox {
     height: 40px;
-    background: -webkit-gradient(linear,0% 0%,0% 100%,from(#cdd5df),color-stop(3%,#b0bccd),color-stop(5%,#889bb3),color-stop(51%,#8195af),color-stop(97%,#6d84a2),to(#2d3642));
+    background: -webkit-gradient(linear,0% 0%,0% 100%,from(#cdd5df),color-stop(2%,#b0bccd),color-stop(5%,#889bb3),color-stop(51%,#8195af),color-stop(97%,#6d84a2),to(#2d3642));
     margin: -13px 0 13px 0;
     width: 100%
 }
@@ -499,13 +499,13 @@ fieldset {
 .searchbox input[type="text"] {
     border: 0;
     -webkit-appearance: none;
-    height: 18px;
+    height: 31px;
     float: left;
     font-size: 13px;
     padding: 0;
     position: relative;
-    top: 2px;
-    left: 2px
+    top: -4;
+    /* left: 2px; */
 }
 
 .textbox img {
