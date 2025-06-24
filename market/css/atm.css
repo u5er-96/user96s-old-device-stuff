@@ -858,11 +858,7 @@ li:last-child.store .image,.store:last-child a {
     background: #dddee0
 }
 
-.applist li:nth-child(even) {
-    background: -webkit-gradient(linear,0% 0%,0% 100%,from(#ffffff),color-stop(98%,#ffffff),to(#6d6d6d));
-}
-
-.applist li:nth-child(odd) {
+.applist li {
     background: -webkit-gradient(linear,0% 0%,0% 100%,from(#ffffff),color-stop(98%,#ffffff),to(#6d6d6d));
 }
 
