@@ -296,7 +296,7 @@ a:hover .arrow {
     margin-top: 10px;
     height: auto;
     z-index: 0;
-    overflow: hidden
+    overflow: hidden;
 }
 
 #footer {
@@ -847,7 +847,7 @@ li:last-child.store .image,.store:last-child a {
 }
 
 .musiclist ul,.ipodlist ul,.applist ul {
-    padding: 0
+    padding: 0;
 }
 
 .ipodlist ul {
@@ -1089,7 +1089,7 @@ li:last-child.store .image,.store:last-child a {
 }
 
 .ipodlist #content,.musiclist #content,.applist #content {
-    margin-top: -29px!important
+    margin-top: -29px!important;
 }
 
 .list ul img {
@@ -1353,5 +1353,7 @@ select {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 11;
+  margin-bottom: 23;
   width: 50%;
 }
