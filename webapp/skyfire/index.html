@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<title>Welcome to Skyfire!</title>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet"  type="text/css" href="css/style-min.css" />
+				<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script type="text/javascript" src="js/home-min.js"></script>
+		
+	</head>
+	<body>
+	<div class="page_header">
+	<a href="/"><img class="header_img" src="img/header_bar_logo.png" width="95" height="24" alt="Skyfire" /></a>
+</div><div id='adbar' class='ad_bar' >
+	<script type="text/javascript">
+	var Skyfire_mopub = {
+		iphone: {
+			ad_unit: 'agltb3B1Yi1pbmNyDQsSBFNpdGUY6K6EEgw',
+			width: 320,
+			height: 50		},
+		ipad: {
+			ad_unit: 'agltb3B1Yi1pbmNyDQsSBFNpdGUY2vHaEww',
+			width: 728,
+			height: 90		}
+	};
+	
+    var mopub_ad_unit='agltb3B1Yi1pbmNyDQsSBFNpdGUY6K6EEgw';
+    var mopub_ad_width=320;
+    var mopub_ad_height=50;
+		
+	if (screen && screen.width) {
+		var el = $('#adbar');
+		if (screen.width == '768') {
+			window.mopub_ad_unit = Skyfire_mopub.ipad.ad_unit;
+			window.mopub_ad_width = Skyfire_mopub.ipad.width;
+			window.mopub_ad_height = Skyfire_mopub.ipad.height;
+			el.css('max-height', '90px');
+		} else {
+			window.mopub_ad_unit = Skyfire_mopub.iphone.ad_unit;
+			window.mopub_ad_width = Skyfire_mopub.iphone.width;
+			window.mopub_ad_height = Skyfire_mopub.iphone.height;
+			el.css('max-height', '50px');
+		}
+	}
+</script>
+<script async="true" type="text/javascript" src="http://ads.mopub.com/js/client/mopub.js"></script></div>
+<div class="window google_search">
+	<div class="form_wrapper" id="google_search_form_wrapper">
+		<form method="GET" action="http://www.google.com/m">
+			<table>
+				<tr>
+					<td>
+						<input type='text' id="google_search_form_entry" class='text_input' name='q' value='' onfocus='hideSearchBackground();' onblur='showSearchBackground();' />
+					</td>
+					<td class='submit_button'>
+						<input type='image' class='submit_input' src="img/search_button.png" alt='Search' value='Search' />
+					</td>
+				</tr>
+			</table>
+			<input type='hidden' name='skyfire_landing_page' value='1' />
+		</form>
+	</div>
+	<script type="text/javascript">
+		// If the user comes back to this page after navigating away,
+		// it's possible that the input field will already have something in it.
+		// For the best experience, hide the background now and show it at the end
+		// of pageload only if it's ok to do so.
+		window.addEventListener( 'load', setInitialBackgroundImageState, false );
+
+		function setInitialBackgroundImageState() {
+			var input_elem;
+
+			input_elem = document.getElementById( 'google_search_form_entry' );
+			if( input_elem.value == '' ) {
+				showSearchBackground();
+			}
+		}
+
+		function hideSearchBackground() {
+			var elem, style;
+			
+			elem = document.getElementById( 'google_search_form_wrapper' );
+			style = window.getComputedStyle( elem, null );
+			
+			if( style.backgroundImage == 'none' )
+				return;
+			
+			elem.oldBackground = style.backgroundImage;
+			elem.style.backgroundImage = 'none';
+		}
+		hideSearchBackground();
+		
+		function showSearchBackground() {
+			var elem, input_elem, style;
+			
+			elem = document.getElementById( 'google_search_form_wrapper' );
+			style = window.getComputedStyle( elem, null );
+			
+			input_elem = document.getElementById( 'google_search_form_entry' );
+
+			if( style.backgroundImage != 'none' ) {
+				return;
+			}
+			
+			if( input_elem.value != '' ) {
+				return;
+			}
+			
+			elem.style.backgroundImage = elem.oldBackground;
+		}
+	</script>
+</div><div class='window android' id='trending_video-wrapper'>
+	<div class='window_title'>Trending Videos</div>
+	<div id="trending_video_viewport">
+		<div class="trending_videos">
+			<div id="loading_videos">Loading...</div>
+		</div>
+	</div>
+</div>
+<script>
+$(function(){
+	var api_microscope_url = "http://sfo-microscope.skyfire.com/index.php";
+	var thumb_w = 147;
+	var thumb_h = 82;
+	if (screen && screen.width) {
+		if (screen.width == '768') {
+			thumb_w = 236;
+			thumb_h = 141;
+		}
+	}
+	
+	TrendingVideo.init(api_microscope_url, thumb_w, thumb_h);
+	TrendingVideo.insert();
+});
+</script><div class='window saved_sites'>
+	<div class='window_title'>Featured Sites</div>
+	<div>
+	<a class="custom_site" href="http://www.nytimes.com/">
+	<img class='right_arrow' src="img/arrow_right.png" alt="Open Link" />
+	<img class='favicon' src="img/favicons/nyt.ico" alt="" />
+	<h3>The New York Times - Breaking News, World News & Multimedia</h3>
+	<div class='display_url'>
+		www.nytimes.com	</div>
+</a><a class="custom_site" href="http://www.espn.com/">
+	<img class='right_arrow' src="img/arrow_right.png" alt="Open Link" />
+	<img class='favicon' src="img/favicons/espn.ico" alt="" />
+	<h3>ESPN: The Worldwide Leader In Sports</h3>
+	<div class='display_url'>
+		www.espn.com	</div>
+</a><a class="custom_site" href="http://www.vevo.com/">
+	<img class='right_arrow' src="img/arrow_right.png" alt="Open Link" />
+	<img class='favicon' src="img/favicons/vevo.ico" alt="" />
+	<h3>VEVO | Music Evolution Revolution!</h3>
+	<div class='display_url'>
+		www.vevo.com	</div>
+</a><a class="custom_site" href="http://www.wired.com/">
+	<img class='right_arrow' src="img/arrow_right.png" alt="Open Link" />
+	<img class='favicon' src="img/favicons/wired.ico" alt="" />
+	<h3>Wired News</h3>
+	<div class='display_url'>
+		www.wired.com	</div>
+</a><a class="custom_site" href="http://www.howcast.com/">
+	<img class='right_arrow' src="img/arrow_right.png" alt="Open Link" />
+	<img class='favicon' src="img/favicons/howcast.ico" alt="" />
+	<h3>How To Videos on Howcast | The best how to videos on the web</h3>
+	<div class='display_url'>
+		www.howcast.com	</div>
+</a><a class="custom_site" href="http://toolserver.org/~erwin85/randomarticle.php?lang=en&amp;family=wikipedia&amp;categories=Featured+articles">
+	<img class='right_arrow' src="img/arrow_right.png" alt="Open Link" />
+	<img class='favicon' src="img/favicons/wikipedia.ico" alt="" />
+	<h3>Wikipedia, the free encyclopedia - Random Article</h3>
+	<div class='display_url'>
+		wikipedia.org	</div>
+</a><a class="custom_site" href="http://movies.yahoo.com/">
+	<img class='right_arrow' src="img/arrow_right.png" alt="Open Link" />
+	<img class='favicon' src="img/favicons/yahoo.ico" alt="" />
+	<h3>Yahoo! Movies: Read Movie Reviews, Find Showtimes and View Trailers</h3>
+	<div class='display_url'>
+		movies.yahoo.com	</div>
+</a><a class="custom_site" href="http://www.techcrunch.com/">
+	<img class='right_arrow' src="img/arrow_right.png" alt="Open Link" />
+	<img class='favicon' src="img/favicons/techcrunch.ico" alt="" />
+	<h3>TechCrunch</h3>
+	<div class='display_url'>
+		www.techcrunch.com	</div>
+</a><a class="custom_site" href="http://www.kotaku.com/">
+	<img class='right_arrow' src="img/arrow_right.png" alt="Open Link" />
+	<img class='favicon' src="img/favicons/kotaku.ico" alt="" />
+	<h3>Kotaku, the Gamer's Guide</h3>
+	<div class='display_url'>
+		www.kotaku.com	</div>
+</a><a class="custom_site" href="http://www.dailymotion.com/">
+	<img class='right_arrow' src="img/arrow_right.png" alt="Open Link" />
+	<img class='favicon' src="img/favicons/dailymotion.ico" alt="" />
+	<h3>Dailymotion - Online Videos, Music, and Movies. Watch a Video Today!</h3>
+	<div class='display_url'>
+		www.dailymotion.com	</div>
+</a><a class="custom_site" href="http://www.yahoo.com/">
+	<img class='right_arrow' src="img/arrow_right.png" alt="Open Link" />
+	<img class='favicon' src="img/favicons/yahoo.ico" alt="" />
+	<h3>Yahoo!</h3>
+	<div class='display_url'>
+		www.yahoo.com	</div>
+</a><a class="custom_site" href="http://www.jokes.com/">
+	<img class='right_arrow' src="img/arrow_right.png" alt="Open Link" />
+	<img class='favicon' src="img/favicons/jokes.ico" alt="" />
+	<h3>Stand Up Comedy and Funny Joke of the Day | Comedy Central's Jokes.com</h3>
+	<div class='display_url'>
+		www.jokes.com	</div>
+</a><a class="custom_site" href="http://m.digg.com/">
+	<img class='right_arrow' src="img/arrow_right.png" alt="Open Link" />
+	<img class='favicon' src="img/favicons/digg.ico" alt="" />
+	<h3>Digg - All News, Videos, &amp; Images</h3>
+	<div class='display_url'>
+		m.digg.com	</div>
+</a><a class="custom_site" href="http://www.engadget.com/">
+	<img class='right_arrow' src="img/arrow_right.png" alt="Open Link" />
+	<img class='favicon' src="img/favicons/engadget.ico" alt="" />
+	<h3>Engadget</h3>
+	<div class='display_url'>
+		www.engadget.com	</div>
+</a><a class="custom_site" href="http://failblog.org/">
+	<img class='right_arrow' src="img/arrow_right.png" alt="Open Link" />
+	<img class='favicon' src="img/favicons/fail.ico" alt="" />
+	<h3>FAIL Blog: Epic Fail Funny Pictures and Funny Videos of Owned, Pwned and Fail Moments</h3>
+	<div class='display_url'>
+		failblog.org	</div>
+</a><a class="custom_site" href="http://random.yahoo.com/bin/ryl">
+	<img class='right_arrow' src="img/arrow_right.png" alt="Open Link" />
+	<img class='favicon' src="img/favicons/yahoo.ico" alt="" />
+	<h3>Yahoo! Random URL</h3>
+	<div class='display_url'>
+		random.yahoo.com/bin/ryl	</div>
+</a>	</div>
+</div><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16920899-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script><script type="text/javascript">
+$(document).ready(function(){
+	
+	//Deferred Loading
+	var doLoad = function() {
+			var el = document.createElement("script");
+		el.src = "/js/SERP-min.js";
+		document.body.appendChild(el);
+		};
+
+			window.setTimeout(doLoad , 1000);
+		
+});
+</script>	</body>
+</html>
